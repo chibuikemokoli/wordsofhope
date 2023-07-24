@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== REMIXICONS ===============-->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://kit.fontawesome.com/62a41216fa.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+   <link href="assets/images/logo0.jpg" rel="shortcut icon" />
+
+   <title>Words of Hope Trauma Relief Foundation</title>
+
+   <!-- ===== GSAP ===== -->
+   <script src="assets/js/gsap.min.js"></script>
+</head>
+
+<body>
+
+   <!-- ======SCROLL TOP====== -->
+   <a href="#" class="scrolltop" id="scroll-top">
+      <i class='bx bx-chevron-up scrolltop__icon'></i>
+   </a>
+
+   <!--=============== HEADER ===============-->
+   <header class="header" id="header">
+      <nav class="nav bd-container">
+         <div class="nav__data">
+            <a href="index.html" class="nav__logo">
+
+               <img src="assets/images/logo123.png" class="menu-icon">
+            </a>
+
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line nav__burger"></i>
+               <i class="ri-close-line nav__close"></i>
+            </div>
+         </div>
+
+         <!--=============== NAV MENU ===============-->
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <!-- <li><a href="index.html" class="nav__link sub-2">Home</a></li> -->
+
+               <li class="dropdown__item">
+                  <div class="nav__link"><a href="about.html">
+                        Meet Us </a><i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                  </div>
+
+                  <ul class="dropdown__menu">
+                     <li>
+                        <a href="peggyokonedo.html" class="dropdown__link">
+                           <i class="ri-user-line"></i> Peggy Okonedo
+                        </a>
+                     </li>
+
+                     <li>
+                        <a href="julie.html" class="dropdown__link">
+                           <i class="ri-user-line"></i> Julie Park
+                        </a>
+                     </li>
+
+                     <li>
+                        <a href="diana.html" class="dropdown__link">
+                           <i class="ri-user-line"></i> Diana Okechukwu
+                        </a>
+                     </li>
+
+                     <li>
+                        <a href="joyce.html" class="dropdown__link">
+                           <i class="ri-user-line"></i> Joyce Danlami
+                        </a>
+                     </li>
+                  </ul>
+               </li>
+
+               <!--=============== DROPDOWN 1 ===============-->
+               <li class="dropdown__item">
+                  <div class="nav__link "><a href="services.html">
+                        Services </a><i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                  </div>
+
+                  <ul class="dropdown__menu">
+                     <li>
+                        <a href="training.html" class="dropdown__link">
+                           <i class="ri-arrow-up-down-line"></i> Training and Conferences
+                        </a>
+                     </li>
+                     <li>
+                        <a href="sandtray.html" class="dropdown__link">
+                           <i class="ri-arrow-up-down-line"></i> Sand Tray Therapy
+                        </a>
+                     </li>
+                     <li>
+                        <a href="nvc.html" class="dropdown__link">
+                           <i class="ri-arrow-up-down-line"></i> Play Therapy & Non-Violent Communication
+                        </a>
+                     </li>
+
+                     <!--=============== DROPDOWN SUBMENU ===============-->
+                     <li class="dropdown__subitem">
+                        <div class="dropdown__link">
+                           <a href="counselpage.html" style="color: #fff">
+                              <i class="ri-bar-chart-line"></i><a href="counselpage.html" style="color: #fff">
+                                 Counselling
+                              </a><i class="ri-add-line dropdown__add"></i>
+                           </a>
+                        </div>
+
+                        <ul class="dropdown__submenu">
+                           <li>
+                              <a href="individual.html" class="dropdown__sublink">
+                                 <i class="ri-file-list-line"></i> Indivudial
+                              </a>
+                           </li>
+
+                           <li>
+                              <a href="couples.html" class="dropdown__sublink">
+                                 <i class="ri-cash-line"></i> Couples
+                              </a>
+                           </li>
+
+                           <li>
+                              <a href="teletherapy.html" class="dropdown__sublink">
+                                 <i class="ri-refund-2-line"></i> Teletherapy
+                              </a>
+                           </li>
+                           <li>
+                              <a href="specialties.html" class="dropdown__sublink">
+                                 <i class="ri-refund-2-line"></i> Therapy Specialties
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+               </li>
+
+               <li><a href="supervision.html" class="nav__link sub-2">Supervision</a></li>
+
+               <li><a href="fees.html" class="nav__link sub-2">FEES</a></li>
+
+               <li><a href="wt2xpct.html" class="nav__link sub-2">What To Expect</a></li>
+
+               <!-- <li><a href="blog.html" class="nav__link sub-2">Blog</a></li> -->
+
+               <li><a href="faq.html" class="nav__link sub-2">FAQ</a></li>
+
+               <!--=============== DROPDOWN 2 ===============-->
+
+               <li><a href="contact.html" class="nav__link">Contact Us</a></li>
+            </ul>
+         </div>
+      </nav>
+   </header>
+
+   <!-- ======FAQ CONTENT====== -->
+   <section class="about-us-2">
+      <center>
+         <h1 class="abts">Frequently Asked Questions</h1>
+      </center>
+   </section>
+
+   <!-- =====FAQ SECTION.===== -->
+   <section class="faq1">
+      <div class="faq-heading">
+         <!-- <h3></h3> -->
+         <p>One or two things needed to be known
+            <br> ~ HIM
+         </p>
+      </div>
+
+      <div class="faq-content">
+         <div class="faq-box-container">
+
+            <div class="faq-box">
+               <div class="faq-box-question">
+                  <h4>I’ve never talked to anyone. I’m used to handling things on my own. Aren’t people who go to
+                     therapy weak?</h4>
+                  <span class="faq-box-icon"></span>
+               </div>
+
+               <div class="faq-box-answer">
+                  <p>Not at all. People who ask for help know when they need it and have the ability to reach out.
+                     Everyone needs help now and then.
+                     You already have some strengths that you’ve used before, and for whatever reason, they aren’t
+                     working right now.
+                     Perhaps this problem feels overwhelming and is making it difficult to access your past strengths.
+                     In our work together,
+                     I’ll help you identify what those strengths are and how to implement them again in what is
+                     happening now.
+                  </p>
+               </div>
+            </div>
+
+            <div class="faq-box">
+               <div class="faq-box-question">
+                  <h4>What’s the difference between talking to you or my best friend or family?</h4>
+                  <span class="faq-box-icon"></span>
+               </div>
+
+               <div class="faq-box-answer">
+                  <p>The difference is between someone who can do something, and someone who has the training and
+                     experience to do that same thing professionally.
+                     A mental health professional can help you approach your situation in a new way– teach you new
+                     skills, gain different perspectives, listen to
+                     you without judgment or expectations, and help you listen to yourself. Furthermore, therapy is
+                     completely confidential. You won’t have to
+                     worry about others “knowing my business”. Lastly, if your situation provokes a great deal of
+                     negative emotion, if you’ve been confiding in a
+                     friend or family member, there is the risk that once you are feeling better you could start
+                     avoiding that person so you aren’t reminded of this
+                     difficult time in your life.
+                  </p>
+               </div>
+            </div>
+
+            <div class="faq-box">
+               <div class="faq-box-question">
+                  <h4>Why shouldn’t I just take medication?</h4>
+                  <span class="faq-box-icon"></span>
+               </div>
+
+               <div class="faq-box-answer">
+                  <p>Medication alone cannot solve all issues. What medication does is treat the symptoms. Our work
+                     together is designed to explore the root of the issue,
+                     dig deep into your behavior and teach strategies that can help you accomplish your personal and/or
+                     relational goals. Medication can be effective and
+                     is sometimes needed in conjunction with therapy.
+                  </p>
+               </div>
+            </div>
+
+            <div class="faq-box">
+               <div class="faq-box-question">
+                  <h4>How does it work? What do I have to do in sessions?</h4>
+                  <span class="faq-box-icon"></span>
+               </div>
+
+               <div class="faq-box-answer">
+                  <p>Because each person has different issues and goals for therapy, therapy will be different depending
+                     on the individual. I tailor my therapeutic approach
+                     to your specific needs.
+                  </p>
+               </div>
+            </div>
+
+            <div class="faq-box">
+               <div class="faq-box-question">
+                  <h4>How long will it take?</h4>
+                  <span class="faq-box-icon"></span>
+               </div>
+
+               <div class="faq-box-answer">
+                  <p>Unfortunately, this is not possible to say in a general FAQs page. Everyone’s circumstances are
+                     unique to them and the length of time therapy can
+                     take to allow you to accomplish your goals depends on your desire for personal development, your
+                     commitment, and the factors that are driving you
+                     to seek therapy in the first place.
+                  </p>
+               </div>
+            </div>
+
+            <div class="faq-box">
+               <div class="faq-box-question">
+                  <h4>I want to get the most out of therapy. What can I do to help?</h4>
+                  <span class="faq-box-icon"></span>
+               </div>
+
+               <div class="faq-box-answer">
+                  <p>YI am so glad you are dedicated to getting the most out of your sessions. Your active participation
+                     and dedication is crucial to your success.
+                     After all, we only see each other for a session a week. It’s the work you do outside of our
+                     sessions that will really help you see your personal
+                     growth and development.
+                  </p>
+               </div>
+            </div>
+
+            <div class="faq-box">
+               <div class="faq-box-question">
+                  <h4>My partner and I are having problems. Should we be in individual counseling or come
+                     together?</h4>
+                  <span class="faq-box-icon"></span>
+               </div>
+
+               <div class="faq-box-answer">
+                  <p> If you are concerned about your relationship, and you would both like to work with me, I would
+                     initially work with both of you together.
+                     After this work, if one of you would like to continue in individual sessions, I could work with
+                     only one of you. It is not helpful to move
+                     from individual into couple’s work with the same therapist because of potential trust issues.</p>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="faq-img">
+            <img src="assets/images/header-2.jpg" alt="">
+         </div>
+
+      </div>
+   </section>
+
+   <script>
+      var faq1 = document.getElementsByClassName("faq-box-question");
+      var i;
+      for(i = 0; i < faq1.length; i++){
+         faq1[i].addEventListener("click", function(){
+            this.classList.toggle("active");
+
+            var body = this.nextElementSibling;
+            if(body.style.maxHeight === "100px"){
+               body.style.maxHeight = "0px";
+            }
+            else{
+               body.style.maxHeight = "100px"
+            }
+         });
+      }
+   </script>
+
+   <!-- =======Quote======== -->
+   <section id="supervision" class="vh-10 fle py-">
+      <div class="bd-container">
+         <center>
+            <h1 class="ptext-1">“Every beginner possesses a great potential to be an expert in his or her chosen field.”
+               <br>
+               <br>~Lailah Gifty Akita
+            </h1>
+         </center>
+
+      </div>
+   </section>
+   
+   <!-- =======CALL TO ACTION===== -->
+   <section class="cta3">
+      <h1 class="ctah3">Schedule a <span style="font-family: Dancing script; font-size: 40px;">free</span> 15-minute
+         consultation</h1>
+      <a href="bookingform.html" class="doings-5">BOOK A MEETING</a>
+   </section>
+
+   <!-- =========== FOOTER SECTION =========== -->
+   <section class="legger">
+      <div class="box-container bd-container-ss">
+
+         <div class="box1">
+            <!-- <img class="menu-icon" src="assets/images/logo123.png" alt=""> -->
+            <h3>Words Of Hope Trauma Relief Foundation <i class="fas fa-tree"></i></h3>
+            <p>Lorem ipsum dolor sit. At rem qui recusandae enim inventore non? Eos explicabo assumenda des, placeat.
+            </p>
+            <div class="share">
+               <a href="" class="fab fa-twitter"></a>
+               <a href="" class="fab fa-facebook"></a>
+               <a href="" class="fab fa-instagram"></a>
+               <a href="" class="fab fa-linkedin"></a>
+            </div>
+         </div>
+
+         <div class="box1">
+            <h3>Contact Info</h3>
+            <a href="tel:+2348060072992" class="links"><i class="fas fa-phone"></i> +234 806 007 2992 </a>
+            <a href="tel:+2348060072992" class="links"><i class="fas fa-phone"></i> +234 806 007 2992 </a>
+            <a href="mailto:pokonedo@gmail.com" class="links"><i class="fas fa-envelope"></i>pokonedo@gmail.com</a>
+            <a href="" class="links"><i class="fas fa-map-marker-alt"></i> Jakande Estate,Isolo -
+               101233 </a>
+         </div>
+
+         <div class="box1">
+            <h3>Quick Links</h3>
+            <a href="index.html" class="links"><i class="fas fa-arrow-right"></i> Home </a>
+            <a href="about.html" class="links"><i class="fas fa-arrow-right"></i> Meet Us </a>
+            <a href="services.html" class="links"><i class="fas fa-arrow-right"></i> Services </a>
+            <a href="supervision.html" class="links"><i class="fas fa-arrow-right"></i> Supervision </a>
+            <a href="fees.html" class="links"><i class="fas fa-arrow-right"></i> Fees </a>
+            <a href="wt2xpct.html" class="links"><i class="fas fa-arrow-right"></i> What To Expect </a>
+            <a href="faq.html" class="links"><i class="fas fa-arrow-right"></i> FAQ</a>
+            <a href="contact.html" class="links"><i class="fas fa-arrow-right"></i> Contact Us</a>
+         </div>
+
+         <div class="box1">
+            <h3>Newsletter</h3>
+            <p>Subscribe for latest updates</p>
+            <input type="email" placeholder="Your Email Address" class="email">
+            <input type="submit" value="Subscribe" class="doings-5">
+            <img src="assets/images/card_img.png" class="payment-img" alt="">
+         </div>
+
+      </div>
+      <div class="credit">Words Of Hope Trauma Relief Foundation &#169; 2023 | All Rights Reserved | <span><a
+               href="privacy.html">Privacy Policy</a></span></div>
+   </section>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+
+   <!-- ===== MIXITUP FILTER ===== -->
+   <script src="assets/js/mixitup.min.js"></script>
+
+   <!-- ===== SWIPER JS ===== -->
+   <script src="assets/js/swiper-bundle.min.js"></script>
+
+   <!-- ===== GSAP ===== -->
+   <script src="assets/js/gsap.min.js"></script>
+</body>
+
+</html>
