@@ -2575,11 +2575,6 @@ div.desc {
   padding-right: .5rem;
 }
 
-.blogs .box-container .box1:hover{
-  /* outline:  1rem solid rgba(0, 0, 0, 0.2); */
-  /* outline-offset: 6rem; */
-}
-
 .blogs .box-container .box1 img{
   margin: 1rem 0;
   height: 15rem;
@@ -2710,17 +2705,6 @@ div.desc {
   color: #122db6;
   font-weight: 700;
 }
-
-@media (max-width: 450px){
-  .legger{
-    /* text-align: center; */
-    /* justify-content: center; */
-    /* align-items: center; */
-  }
-}
-
-
-
 
 .section__container {
   max-width: var(--max-width);
@@ -3013,5 +2997,3 @@ header , body{
     row-gap: 15px;
   }
 }
-
-

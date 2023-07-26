@@ -36,10 +36,10 @@ window.addEventListener('scroll', scrollTop)
 
 /*===== GSAP ANIMATION =====*/
 // gsap.from('.text-box', {opacity: 0, duration: 5, delay:1.2, x:60})
-gsap.from('.header__image', { opacity: 0, duration: 2, delay: .5, x: -25 })
-gsap.from('.header__content', { opacity: 0, duration: 2, delay: .5, x: 25 })
+gsap.from('.header__image', { opacity: 0, duration: 2, delay: .5, y: -25 })
+gsap.from('.header__content', { opacity: 0, duration: 2, delay: .5, y: 25 })
 gsap.from('.video__image, .hgf', { opacity: 0, duration: 2, delay: 1.4, y: 25, ease: 'expo.out' })
-gsap.from('.sub__header', { opacity: 0, duration: 2, delay: 1.4, x: 25, ease: 'expo.out' })
+gsap.from('.sub__header', { opacity: 0, duration: 2, delay: 1.4, y: 25, ease: 'expo.out' })
 
 gsap.from('.nav__logo, .nav__toggle', { opacity: 0, duration: 1.5, delay: 1, y: 25, ease: 'expo.out' })
 gsap.from('.abts', { opacity: 0, duration: 1.5, delay: .8, y: 25, ease: 'expo.out' })
