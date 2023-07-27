@@ -227,25 +227,25 @@
          </section>
 
          <section class="col right">
-            <form class="messageForm">
+            <form class="messageForm" action="form.php" method="post">
 
                <div class="inputGroup halfWidth">
-                  <input type="text" name="" required="required">
+                  <input type="text" name="name" required="required">
                   <label>Your Name</label>
                </div>
 
                <div class="inputGroup halfWidth">
-                  <input type="email" name="" required="required">
+                  <input type="email" name="email" required="required">
                   <label>Your Email</label>
                </div>
 
                <div class="inputGroup fullWidth">
-                  <input type="text" name="" required="required">
+                  <input type="text" name="subject" required="required">
                   <label>Subject</label>
                </div>
 
                <div class="inputGroup fullWidth">
-                  <textarea required="required"></textarea>
+                  <textarea rows="8" name="message" required="required"></textarea>
                   <label>Your Message</label>
                </div>
 
