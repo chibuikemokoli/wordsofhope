@@ -2802,7 +2802,7 @@ header , body{
 }
 
 .header__content .sub__header {
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 600;
   color: var(--primary-color);
 }
@@ -2875,6 +2875,47 @@ header , body{
   }
 }
 
+@media (width < 500px) {
+  .header__image{
+    display: none;
+  }
+  .header__container{
+    /* background-image: url(../images/footer.avif); */
+    /* background-size: cover; */
+  }
+  .header__content {
+    text-align: center;
+    /* font-size: 2.3rem; */
+    /* display: none; */
+  }
+  .header__content h1{
+    margin-top: 7vh!important;
+    /* color: #0d213f; */
+    /* font-size: 3.2rem; */
+    padding-bottom: 40px;
+    /* font-family: 'Dancing script'; */
+    /* font-family: serif; */
+    /* background-image: url(../images/faqb1.jpg); */
+  }
+  .header__content .sub__header{
+    font-size: 19px;
+  }
+  .polll{
+    display: block;
+    padding-top: 10px;
+    font-size: 1.4rem;
+    font-family: initial;
+  }
+  .header__container{
+    background: linear-gradient(rgb(255, 255, 255), rgba(0, 0, 0, 0.289)) , url("../images/header-1.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+.pol a{
+  font-weight: 600;
+  color: var(--black-color);
+}
 
 
 
