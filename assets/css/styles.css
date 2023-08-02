@@ -2889,10 +2889,10 @@ header , body{
     /* display: none; */
   }
   .header__content h1{
-    margin-top: 7vh!important;
+    /* margin-top: 7vh!important; */
     /* color: #0d213f; */
     /* font-size: 3.2rem; */
-    padding-bottom: 40px;
+    padding-bottom: 35px;
     /* font-family: 'Dancing script'; */
     /* font-family: serif; */
     /* background-image: url(../images/faqb1.jpg); */
@@ -2902,7 +2902,7 @@ header , body{
   }
   .polll{
     display: block;
-    padding-top: 10px;
+    padding-top: 20px;
     font-size: 1.4rem;
     font-family: initial;
   }
@@ -2917,18 +2917,6 @@ header , body{
   color: var(--black-color);
 }
 
-
-
-
-
-/* body {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background: rgb(130, 106, 251);
-} */
 .container7 {
   position: relative;
   max-width: 700px;
