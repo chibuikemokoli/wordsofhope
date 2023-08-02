@@ -2900,6 +2900,10 @@ header , body{
   .header__content .sub__header{
     font-size: 19px;
   }
+  .header__content .section__subtitle1{
+    /* color: #000; */
+    font-weight: 600;
+  }
   .polll{
     display: block;
     padding-top: 20px;
