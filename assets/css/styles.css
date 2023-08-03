@@ -2824,9 +2824,11 @@ header , body{
 
   .header__container{
     /* background-image: linear-gradient(#9fadce, rgba(255, 255, 255, 0.715)), url(../images/header-2.jpg); */
+    /* background-image: linear-gradient(#9fadce, rgba(255, 255, 255, 0.7)); */
+    background-image: linear-gradient(#fff, #ffffffa9, rgba(159, 173, 206, 0.722) ,#ffffffb7,rgb(255, 255, 255)), url(../images/header-1.jpg);
     /* background-image: linear-gradient(rgb(255, 255, 255), rgba(0, 0, 0, 0.289)) ,url(../images/desktop-wallpaper-sky-blue-nature-in-2020-sky-aesthetic-sunset-blue-sky-background-morning-sky.jpg); */
-    background: linear-gradient(#9fadce, rgba(255, 255, 255, 0.715));
     background-size: cover;
+    background-position: center;
   }
   
   .header__content {
