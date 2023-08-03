@@ -2855,6 +2855,11 @@ header , body{
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 1060px){
+  .hide{
+    display: none;
+  }
+}
 
 @media (width < 1200px) {
   .header__image img:nth-child(1) {
