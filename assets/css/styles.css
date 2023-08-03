@@ -2694,7 +2694,8 @@ header , body{
 }
 
 .header__container{
-  min-height: 100vh;
+  min-height: 110vh;
+  overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
