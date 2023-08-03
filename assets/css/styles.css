@@ -2920,6 +2920,12 @@ header , body{
     background-size: cover;
     background-position: center;
   }
+  .dropdown__arrow{
+    display: none;
+  }
+  .dropdown__menu{
+    display: none;
+  }
 }
 .pol a{
   font-weight: 600;
