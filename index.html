@@ -79,7 +79,7 @@
                <!-- <li><a href="index.html" class="nav__link sub-2">Home</a></li> -->
 
                <li class="dropdown__item">
-                  <div class="nav__link dropdown__button"><a href="about.html">
+                  <div class="nav__link "><a href="about.html">
                         Meet Us </a><i class="ri-arrow-down-s-line dropdown__arrow"></i>
                   </div>
 
@@ -112,7 +112,7 @@
 
                <!--=============== DROPDOWN 1 ===============-->
                <li class="dropdown__item">
-                  <div class="nav__link dropdown__button"><a href="services.html">
+                  <div class="nav__link "><a href="services.html">
                         Services </a><i class="ri-arrow-down-s-line dropdown__arrow"></i>
                   </div>
 
@@ -135,7 +135,7 @@
 
                      <!--=============== DROPDOWN SUBMENU ===============-->
                      <li class="dropdown__subitem">
-                        <div class="dropdown__link dropdown__button">
+                        <div class="dropdown__link ">
                            <a href="counselpage.html" style="color: #fff">
                               <i class="ri-hand-heart-fill"></i><a href="counselpage.html" style="color: #fff">
                                  Counselling
@@ -190,41 +190,58 @@
    </header>
 
    <!-- ======HOME/LANDING PAGE====== -->
-   <section>
-      <div class="section__container header__container ">
-         <div class="header__image">
-            <!-- <img src="assets/images/beautiful-pic-different-beautiful-pictures-30958249-1600-1200.jpg" alt=""> -->
-            <img src="assets/images/header-1.jpg" />
-            <img src="assets/images/header-2.jpg" />
-         </div>
-         <div class="header__content">
-            <div>
-               <h1>Words of Hope Trauma Relief Foundation </h1>
-               <p class="sub__header" style="color: hsl(220, 20%, 18%); font-weight: 600;font-family: 'Dancing script';">
-                  ...using Words of Hope to transform lives.
-               </p>
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home">
+         <div class="home__container container-g">
+            <div class="home__content">
+               <div class="home__data">
+                  <h3 class="home__subtitle">
+                     ...using Words of Hope to transform lives.
+                  </h3>
 
-               <p class="section__subtitle1">
-                  Words of Hope supports people during life transitions by providing coping skills to
-                  manage stress, anxiety, cultivating healthy relationships, and mental health.
-               </p>
-               <div class="action__btns">
-                  <button class="doings-5 hgf"><a href="about.html" style="color: #fff;">Get Started</a></button>
-                  <div class="story">
-                     <div class="video__image">
-                        <img src="assets/images/ggsi1.webp" alt="story" />
-                        <span><a href="https://www.youtube.com"><i class="ri-play-fill"></i></a></span>
+                  <h1 class="home__title">
+                     Words Of Hope <br> Trauma Relief Foundation
+                     <br>
+                  </h1>
+                  <!-- ...using Words of Hope to transform lives. -->
+
+                  <p class="home__description">
+                     We support people during life transitions, <br>
+                     helping them find their purpose in the world around us.<br />
+                  </p>
+
+                  <div class="action__btns">
+                     <!-- <button class="doings-5 hgf" ><a href="about.html" style="color: #fff;">Get Started</a></button> -->
+                     <div class="story">
+                        <span class="pol"><a href="https://www.youtube.com">Watch our story</a></span>
+                        <div class="video__image">
+                           <img src="assets/images/ggsi1.webp" alt="story" />
+                           <span><a href="https://www.youtube.com"><i class="ri-play-fill"></i></a></span>
+                        </div>
+                        <a href="#about" class="home__button">
+                           Get Started
+                        </a>
                      </div>
-                     <span class="pol"><a href="https://www.youtube.com">Watch our story</a></span>
                   </div>
                </div>
+
+               <img src="assets/images/bird-1.svg" alt="" class="home__bird-1">
+               <img src="assets/images/bird-2.svg" alt="" class="home__bird-2">
+            </div>
+
+            <div class="home__images">
+               <img src="assets/images/img-4.svg" class="home__img-4">
+               <img src="assets/images/img-3.svg" class="home__img-3">
+               <img src="assets/images/img-2.svg" class="home__img-2">
+               <!-- <img src="assets/images/img-1.svg" class="home__img-1"> -->
             </div>
          </div>
-      </div>
-   </section>
+      </section>
+   </main>
 
    <!-- =======About ======= -->
-   <section id="about" class="about py- vh-10">
+   <section id="about" class="about py- vh-10 pt1">
       <!-- #dce5e6.7e -->
       <div class="bd-container">
          <!-- <center>
@@ -367,7 +384,9 @@
             </div>
 
             <center>
-               <p class="ptext" style="text-transform: uppercase; color: hsl(220, 20%, 18%); font-family: 'Lugrasimo', cursive;">WE not only HELP YOU
+               <p class="ptext"
+                  style="text-transform: uppercase; color: hsl(220, 20%, 18%); font-family: 'Lugrasimo', cursive;">WE
+                  not only HELP YOU
                   ANCHOR YOUR SOUL So that the storms of life don't shipwreck you, we help you REFRAME your life.
                </p>
             </center>
@@ -403,7 +422,8 @@
                </div>
                <h3>Words of Hope Project</h3>
                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam maxime cupiditate illum voluptatibus
-                  reiciendis. Tempore facere facilis laborum, id magnam, quae natus. <a href="blog1.html"  style="color: blueviolet;"> Click here to know more</a> </p>
+                  reiciendis. Tempore facere facilis laborum, id magnam, quae natus. <a href="blog1.html"
+                     style="color: blueviolet;"> Click here to know more</a> </p>
             </div>
          </div>
 
@@ -416,7 +436,9 @@
                </div>
                <h3>Power Girls Project</h3>
                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam maxime cupiditate illum voluptatibus
-                  reiciendis. Tempore facere facilis laborum, id magnam, quae natus. <a href="blog2.html" style="color: blueviolet;"> Click here to know more</a> </p>
+                  reiciendis. Tempore facere facilis laborum, id magnam, quae natus. <a href="blog2.html"
+                     style="color: blueviolet;"> Click here to know more</a>
+               </p>
             </div>
          </div>
 
@@ -429,8 +451,10 @@
                </div>
                <h3>Words of Hope</h3>
                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam maxime cupiditate illum voluptatibus
-                  reiciendis. Tempore facere facilis laborum, id magnam, quae natus. <a href="blog3.html" style="color: blueviolet;"> Click here to know more</a> </p>
-         
+                  reiciendis. Tempore facere facilis laborum, id magnam, quae natus. <a href="blog3.html"
+                     style="color: blueviolet;"> Click here to know more</a>
+               </p>
+
             </div>
          </div>
 
@@ -582,7 +606,9 @@
    <section class="cta3">
       <h1 class="ctah3">Schedule a <span style="font-family: Dancing script; font-size: 40px;">free</span> 15-minute
          consultation</h1>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSek_FL1ur663iD3zjXM-MFb6PTQ158rR2pvFbU1ww29rHRDWw/viewform?embedded=true" target="_blank" rel="noopener" width="640" height="1638" frameborder="0" marginheight="0" marginwidth="0" class="doings-5">BOOK A MEETING</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSek_FL1ur663iD3zjXM-MFb6PTQ158rR2pvFbU1ww29rHRDWw/viewform?embedded=true"
+         target="_blank" rel="noopener" width="640" height="1638" frameborder="0" marginheight="0" marginwidth="0"
+         class="doings-5">BOOK A MEETING</a>
    </section>
 
    <!-- =========== FOOTER SECTION =========== -->

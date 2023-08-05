@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@400;500;700&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -20,6 +21,12 @@
   --primary-color: #3685fb;
   --primary-color-dark: #2f73d9;
   --secondary-color: #fafcff;
+  --first-color: hsl(195, 100%, 30%);
+  --gradient-color: linear-gradient(90deg,
+                    hsl(210, 55%, 20%),
+                    hsl(192, 62%, 25%));
+  --title-color: hsl(210, 52%, 20%);
+  --text-color: hsl(210, 24%, 15%);
   --text-dark: #0d213f;
   --text-light: #767268;
   --extra-light: #ffffff;
@@ -28,7 +35,8 @@
   /*========== Font and typography ==========*/
   /* .5rem = 8px | 1rem = 16px ... */
   --body-font: "Montserrat", sans-serif;
-  --biggest-font-size: 2.5rem;
+  --second-font: "Lora", serif;
+  --biggest-font-size: 2.25rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1.125rem;
@@ -43,7 +51,6 @@
   --font-bold: 700;
 
   /*========== z index ==========*/
-  --z-tooltip: 10;
   --z-tooltip: 10;
   --z-fixed: 100;
 
@@ -78,7 +85,7 @@
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1024px) {
   :root {
-    --biggest-font-size: 4.5rem;
+    --biggest-font-size: 4rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -100,6 +107,9 @@
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  background-color: var(--body-color);
+  color: var(--text-color);
 }
 
 html {
@@ -131,22 +141,10 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
+  /* box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3); */
   z-index: var(--z-fixed);
-  background-color: #9fadce;
-  height: var(--header-height) + 1rem;
-}
-
-#header {
-  /* background-color: #fff; Black background color */
-  position: fixed;
-  /* Make it stick/fixed */
-  top: 0;
-  /* Stay on top */
-  width: 100%;
-  /* Full width */
-  transition: top 0.3s;
-  /* Transition effect when sliding down (and up) */
+  /* background-color: #9fadce; */
+  /* height: var(--header-height) + 1rem; */
 }
 
 /*=============== NAV ===============*/
@@ -222,7 +220,8 @@ a {
   }
 
   .nav__list {
-    background-color: #9fadce;
+    /* background-color: #9fadce; */
+    background-color: #ffffff;
     padding-top: 1rem;
   }
 }
@@ -244,7 +243,7 @@ a {
 }
 
 .nav__link a:hover {
-  color: var(--first-color-lighten);
+  /* color: var(--first-color-lighten); */
 }
 
 .nav__link:hover {
@@ -278,6 +277,7 @@ a {
   font-size: 1.25rem;
   font-weight: initial;
   transition: transform .4s;
+  color: #000;
 }
 
 .dropdown__link,
@@ -2696,9 +2696,9 @@ header , body{
 
 .header__container{
   min-height: 100vh;
-  overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
   gap: 2rem;
 }
 
@@ -2752,6 +2752,13 @@ header , body{
 }
 
 .header__content .action__btns {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.home__content .action__btns {
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -2839,15 +2846,10 @@ header , body{
   .header__content h1{
     font-family: 'Dancing script';
     justify-content: center;
-    color: #000000;
   }
 
   .header__content .section__subtitle1{
     font-weight: 600;
-  }
-
-  .header__content .sub__header{
-    /* color: #3f00ff; */
   }
 
   .dropdown__arrow{
@@ -2857,11 +2859,17 @@ header , body{
   .dropdown__menu{
     display: none;
   }
+
+  .pol a{
+    color: #fff;
+    /* background: #000; */
+  }
 }
 
 .pol a{
   font-weight: 600;
-  color: var(--black-color);
+  color: #000;
+  /* color: var(--black-color); */
 }
 
 .container7 {
@@ -2998,4 +3006,210 @@ header , body{
   color: rgb(187, 0, 0);
   margin-top: 10px;
   display: block;
+}
+
+.container-g {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.home{
+  position: relative;
+}
+
+.home__container{
+  padding-top: 8rem;
+  height: 100vh;
+}
+
+.home__content{
+  position: relative;
+  z-index: 2;
+}
+
+.home__data{
+  display: grid;
+  row-gap: .5rem;
+}
+
+.home__subtitle{
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  /* letter-spacing: 3px; */
+  font-family: 'Dancing script';
+}
+
+.home__title{
+  /* font-size: var(--biggest-font-size); */
+  font-family: var(--second-font);
+  color: var(--title-color);
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.home__description{
+  margin-bottom: 2.5rem;
+}
+
+.home__button{
+  display: inline-block;
+  background: var(--gradient-color);
+  color: var(--white-color);
+  width: max-content;
+  padding: 1rem 2rem;
+  border-radius: .75rem;
+  box-shadow: 0 24px 32px hsla(210, 54%, 24%, .3);
+}
+
+.home__bird-1,
+.home__bird-2{
+  position: absolute;
+  width: 60px;
+}
+
+.home__bird-1{
+  bottom: -6rem;
+  rotate: -30deg;
+}
+
+.home__bird-2{
+  top: 4.5rem;
+  right: 0;
+  rotate: -15deg;
+}
+
+.home__images{
+  z-index: 1;
+}
+
+.home__images img{
+  position: absolute;
+  max-width: initial;
+  width: 600px;
+  left: -7rem;
+  bottom: 0;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 305px) {
+  .container-g{
+    margin-inline: 1rem;
+  }
+
+  .home__title{
+    font-size: 2rem;
+  }
+}
+
+/* For taller devices */
+@media screen and (min-width: 376px) and (min-height: 800px) {
+  .home__container{
+    padding-top: 10rem;
+  }
+
+  .home__images img{
+    width: 700px;
+    left: -12rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 480px) {
+  .home__content{
+    max-width: 305px;
+  }
+
+  .home__bird-2{
+    right: -3rem;
+  }
+
+  .home__images img{
+    width: initial;
+    left: 0;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1023px) {
+  .home__content{
+    max-width: 550px;
+  }
+
+  .home__data{
+    row-gap: 1rem;
+  }
+
+  .home__subtitle{
+    font-size: var(--normal-font-size);
+  }
+
+  .home__description{
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .container-g{
+    margin-inline: auto;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .home__container{
+    height: 950px;
+    padding-top: 10rem;
+  }
+
+  .home__bird-1,
+  .home__bird-2{
+    width: 80px;
+  }
+
+  .home__bird-1{
+    bottom: -7rem;
+    left: -7rem;
+  }
+
+  .home__bird-2{
+    top: 0;
+    right: -6rem;
+  }
+
+  .home__images img{
+    bottom: -3rem;
+  }
+
+  ::-webkit-scrollbar{
+    width: .6rem;
+    border-radius: .5rem;
+    background-color: hsl(220, 24%, 15%);
+  }
+
+  ::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: hsl(220, 24%, 25%);
+  }
+}
+
+
+/* For 2K resolutions (2048 x 1152) */
+@media screen and (min-width: 2048px) {
+  .container-g{
+    max-width: 1300px;
+  }
+
+  .home__container{
+    height: 1200px;
+    padding-top: 15rem;
+  }
+}
+
+
+.pt1{
+  padding-top: 30px;
 }

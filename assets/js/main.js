@@ -21,30 +21,24 @@ function scrollTop() {
 }
 window.addEventListener('scroll', scrollTop)
 
-// ========NAV BAR========
-/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function() {
-//   var currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementById("header").style.top = "0";
-//   } else {
-//     document.getElementById("header").style.top = "-135px";
-//   }
-//   prevScrollpos = currentScrollPos;
-// }
-
 /*===== GSAP ANIMATION =====*/
 // gsap.from('.text-box', {opacity: 0, duration: 5, delay:1.2, x:60})
 gsap.from('.header__image', { opacity: 0, duration: 2, delay: .5, y: -25 })
 gsap.from('.header__content', { opacity: 0, duration: 2, delay: .5, y: 25 })
-gsap.from('.video__image, .hgf', { opacity: 0, duration: 2, delay: 1.4, y: 25, ease: 'expo.out' })
+gsap.from('.video__image, .hgf, .ab2', { opacity: 0, duration: 2, delay: 1.4, y: 25, ease: 'expo.out' })
 gsap.from('.sub__header', { opacity: 0, duration: 2, delay: 1.4, y: 25, ease: 'expo.out' })
 
 gsap.from('.nav__logo, .nav__toggle', { opacity: 0, duration: 1.5, delay: 1, y: 25, ease: 'expo.out' })
 gsap.from('.abts', { opacity: 0, duration: 1.5, delay: .8, y: 25, ease: 'expo.out' })
-gsap.from('.nav__list', { opacity: 0, duration: 1.2, delay: 1.3, y: 25, ease: 'expo.out' })
+gsap.from('.nav__list, .ab1', { opacity: 0, duration: 1.2, delay: 1.3, y: 25, ease: 'expo.out' })
 // gsap.from('.home__social-icon', {opacity: 0, duration: 2, delay:2.3, y:25, ease:'expo.out'})
+gsap.from('.home__img-2', 1.2, {opacity: 0, y: 200, delay: .1})
+gsap.from('.home__img-3', 1.2, {opacity: 0, y: 200, delay: .5})
+gsap.from('.home__data', 1.2, {opacity: 0, y: -60, delay: 1})
+gsap.from('.home__bird-1', 1.2, {opacity: 0, x: -80, delay: 1.1})
+gsap.from('.home__bird-2', 1.2, {opacity: 0, x: 80, delay: 1.2})
+gsap.from('.home__img-1', 1.2, {opacity: 0, y: 200, delay: 1.2})
+gsap.from('.home__img-4', 1.2, {opacity: 0, x: 200, delay: 1.3})
 
 // cookies for website
 function setCookie(cname, cvalue, exdays) {
@@ -107,16 +101,31 @@ function checkCookie() {
 //   };
 // }
 
-// popup
-// window.addEventListener("load", function () {
-//   setTimeout(
-//     function open(event) {
-//       document.querySelector(".popup").style.display = "block";
-//     },
-//     1000
-//   )
-// });
+// submit to google sheets
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxmuCz6v88jXsGlhiBkAyAvc8FOxBsPB6dYuWshetc7Bci1FwiiPhZRTsIK9DOkxKzP/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
+  
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+})
 
-// document.querySelector("#close").addEventListener("click", function () {
-//   document.querySelector(".popup").style.display = "none";
-// });
+
+
+
+/*===== CHANGE BACKGROUND HEADER =====*/ 
+function scrollHeader(){
+  const header = document.getElementById('header')
+  if(this.scrollY >= 200) header.classList.add('scroll-header');
+  else header.classList.remove('scroll-header')
+}
+window.addEventListener('scroll',scrollHeader)
