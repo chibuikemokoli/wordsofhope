@@ -1,340 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+         rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+         rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://kit.fontawesome.com/62a41216fa.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="assets/css/styles.css">
+      <link href="assets/images/logo0.jpg" rel="shortcut icon" />
 
-   <!--=============== REMIXICONS ===============-->
-   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
-      rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
-      rel="stylesheet">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-   <script src="https://kit.fontawesome.com/62a41216fa.js" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <!--=============== CSS ===============-->
-   <link rel="stylesheet" href="assets/css/styles.css">
-   <link href="assets/images/logo0.jpg" rel="shortcut icon" />
+      <title>First Blog | Words Of Hope</title>
 
-   <title>First Blog | Words Of Hope</title>
+      <script src="assets/js/gsap.min.js"></script>
+   </head>
 
-   <!-- ===== GSAP ===== -->
-   <script src="assets/js/gsap.min.js"></script>
-</head>
+   <body>
+      <a href="#" class="scrolltop" id="scroll-top">
+         <i class='bx bx-chevron-up scrolltop__icon'></i>
+      </a>
 
-<body>
+      <header class="header" id="header">
+         <nav class="nav bd-container">
+            <div class="nav__data">
+               <a href="index.html" class="nav__logo">
+                  <img src="assets/images/logo123.png" class="menu-icon">
+               </a>
 
-   <!-- ======SCROLL TOP====== -->
-   <a href="#" class="scrolltop" id="scroll-top">
-      <i class='bx bx-chevron-up scrolltop__icon'></i>
-   </a>
-
-   <!--=============== HEADER ===============-->
-   <header class="header" id="header">
-      <nav class="nav bd-container">
-         <div class="nav__data">
-            <a href="index.html" class="nav__logo">
-
-               <img src="assets/images/logo123.png" class="menu-icon">
-            </a>
-
-            <div class="nav__toggle" id="nav-toggle">
-               <i class="ri-menu-line nav__burger"></i>
-               <i class="ri-close-line nav__close"></i>
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav__burger"></i>
+                  <i class="ri-close-line nav__close"></i>
+               </div>
             </div>
-         </div>
 
-         <!--=============== NAV MENU ===============-->
-         <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-               <!-- <li><a href="index.html" class="nav__link sub-2">Home</a></li> -->
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="dropdown__item">
+                     <div class="nav__link dropdown__button"><a href="about.html">
+                           Meet Us </a><i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
 
-               <li class="dropdown__item">
-                  <div class="nav__link dropdown__button"><a href="about.html">
-                        Meet Us </a><i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                  </div>
-
-                  <ul class="dropdown__menu">
-                     <li>
-                        <a href="peggyokonedo.html" class="dropdown__link">
-                           <i class="ri-user-line"></i> Peggy Okonedo
-                        </a>
-                     </li>
-
-                     <li>
-                        <a href="julie.html" class="dropdown__link">
-                           <i class="ri-user-line"></i> Julie Park
-                        </a>
-                     </li>
-
-                     <li>
-                        <a href="diana.html" class="dropdown__link">
-                           <i class="ri-user-line"></i> Diana Okechukwu
-                        </a>
-                     </li>
-
-                     <li>
-                        <a href="joyce.html" class="dropdown__link">
-                           <i class="ri-user-line"></i> Joyce Danlami
-                        </a>
-                     </li>
-                  </ul>
-               </li>
-
-               <!--=============== DROPDOWN 1 ===============-->
-               <li class="dropdown__item">
-                  <div class="nav__link dropdown__button"><a href="services.html">
-                        Services </a><i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                  </div>
-
-                  <ul class="dropdown__menu">
-                     <li>
-                        <a href="training.html" class="dropdown__link">
-                           <i class="ri-presentation-line"></i> Training and Conferences
-                        </a>
-                     </li>
-                     <li>
-                        <a href="sandtray.html" class="dropdown__link">
-                           <i class="ri-user-heart-fill"></i> Sand Tray Therapy
-                        </a>
-                     </li>
-                     <li>
-                        <a href="nvc.html" class="dropdown__link">
-                           <i class="ri-speak-fill"></i> Play Therapy & Non-Violent Communication
-                        </a>
-                     </li>
-
-                     <!--=============== DROPDOWN SUBMENU ===============-->
-                     <li class="dropdown__subitem">
-                        <div class="dropdown__link dropdown__button">
-                           <a href="counselpage.html" style="color: #fff">
-                              <i class="ri-hand-heart-fill"></i><a href="counselpage.html" style="color: #fff">
-                                 Counselling
-                              </a><i class="ri-add-line dropdown__add"></i>
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="peggyokonedo.html" class="dropdown__link">
+                              <i class="ri-user-line"></i> Peggy Okonedo
                            </a>
-                        </div>
+                        </li>
 
-                        <ul class="dropdown__submenu">
-                           <li>
-                              <a href="individual.html" class="dropdown__sublink">
-                                 <i class="ri-user-heart-line"></i> Indivudial
+                        <li>
+                           <a href="julie.html" class="dropdown__link">
+                              <i class="ri-user-line"></i> Julie Park
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="diana.html" class="dropdown__link">
+                              <i class="ri-user-line"></i> Diana Okechukwu
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="joyce.html" class="dropdown__link">
+                              <i class="ri-user-line"></i> Joyce Danlami
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+
+                  <li class="dropdown__item">
+                     <div class="nav__link dropdown__button"><a href="services.html">
+                           Services </a><i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="training.html" class="dropdown__link">
+                              <i class="ri-presentation-line"></i> Training and Conferences
+                           </a>
+                        </li>
+                        <li>
+                           <a href="sandtray.html" class="dropdown__link">
+                              <i class="ri-user-heart-fill"></i> Sand Tray Therapy
+                           </a>
+                        </li>
+                        <li>
+                           <a href="nvc.html" class="dropdown__link">
+                              <i class="ri-speak-fill"></i> Play Therapy & Non-Violent Communication
+                           </a>
+                        </li>
+
+                        <li class="dropdown__subitem">
+                           <div class="dropdown__link dropdown__button">
+                              <a href="counselpage.html" style="color: #fff">
+                                 <i class="ri-hand-heart-fill"></i><a href="counselpage.html" style="color: #fff">
+                                    Counselling
+                                 </a><i class="ri-add-line dropdown__add"></i>
                               </a>
-                           </li>
+                           </div>
 
-                           <li>
-                              <a href="couples.html" class="dropdown__sublink">
-                                 <i class="ri-group-fill"></i> Couples
-                              </a>
-                           </li>
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="individual.html" class="dropdown__sublink">
+                                    <i class="ri-user-heart-line"></i> Indivudial
+                                 </a>
+                              </li>
 
-                           <li>
-                              <a href="teletherapy.html" class="dropdown__sublink">
-                                 <i class="ri-psychotherapy-fill"></i> Teletherapy
-                              </a>
-                           </li>
-                           <li>
-                              <a href="specialties.html" class="dropdown__sublink">
-                                 <i class="ri-donut-chart-fill"></i> Therapy Specialties
-                              </a>
-                           </li>
-                        </ul>
-                     </li>
-                  </ul>
-               </li>
+                              <li>
+                                 <a href="couples.html" class="dropdown__sublink">
+                                    <i class="ri-group-fill"></i> Couples
+                                 </a>
+                              </li>
 
-               <li><a href="supervision.html" class="nav__link sub-2">Supervision</a></li>
+                              <li>
+                                 <a href="teletherapy.html" class="dropdown__sublink">
+                                    <i class="ri-psychotherapy-fill"></i> Teletherapy
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="specialties.html" class="dropdown__sublink">
+                                    <i class="ri-donut-chart-fill"></i> Therapy Specialties
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </li>
 
-               <li><a href="fees.html" class="nav__link sub-2">FEES</a></li>
+                  <li><a href="supervision.html" class="nav__link sub-2">Supervision</a></li>
 
-               <li><a href="wt2xpct.html" class="nav__link sub-2">What To Expect</a></li>
+                  <li><a href="fees.html" class="nav__link sub-2">FEES</a></li>
 
-               <!-- <li><a href="blog.html" class="nav__link sub-2">Blog</a></li> -->
+                  <li><a href="wt2xpct.html" class="nav__link sub-2">What To Expect</a></li>
 
-               <li><a href="faq.html" class="nav__link sub-2">FAQ</a></li>
+                  <li><a href="faq.html" class="nav__link sub-2">FAQ</a></li>
 
-               <!--=============== DROPDOWN 2 ===============-->
+                  <li><a href="contact.html" class="nav__link">Contact Us</a></li>
+               </ul>
+            </div>
+         </nav>
+      </header>
 
-               <li><a href="contact.html" class="nav__link">Contact Us</a></li>
-            </ul>
-         </div>
-      </nav>
-   </header>
+      <section class="about-us-2">
+         <center>
+            <h1 class="abts">Our Programs for 2023</h1>
+         </center>
+      </section>
 
-   <!-- ======BLOG BODY====== -->
-   <section class="about-us-2">
-      <center>
-         <h1 class="abts">Our Programs for 2023</h1>
-      </center>
-   </section>
+      <section class="blog-content delp">
 
-   <!-- ========PAGE CONTENT===== -->
-   <section class="blog-content delp">
-
-      <div class="row">
-         <div class="blog-left">
-            <img src="assets/images/certificate.jpg" alt="">
-   
-            <h2>Our Programs for 2023-2024</h2>
-            <p>The Words of Hope Trauma Relief Foundation is a nonprofit organization based in Lagos, Nigeria.
-               A major activity of the foundation is to translate emerging findings about the human brain and child
-               development into practical interventions for the way we nurture, protect, enrich, educate and heal
-               children of adverse experiences.
-            </p>
-            <br>
-            <p>The Words of Hope Trauma Relief Foundation is a nonprofit organization based in Lagos, Nigeria.
-               A major activity of the foundation is to translate emerging findings about the human brain and child
-               development into practical interventions for the way we nurture, protect, enrich, educate and heal
-               children of adverse experiences.
-               The Words of Hope Trauma Relief Foundation is a nonprofit organization based in Lagos, Nigeria.
-               A major activity of the foundation is to translate emerging findings about the human brain and child
-               development into practical interventions for the way we nurture, protect, enrich, educate and heal
-               children of adverse experiences.
-            </p>
-            <br>
-            <p>The Words of Hope Trauma Relief Foundation is a nonprofit organization based in Lagos, Nigeria.
-               A major activity of the foundation is to translate emerging findings about the human brain and child
-               development into practical interventions for the way we nurture, protect, enrich, educate and heal
-               children of adverse experiences.
-            </p>
-            <br>
-            <p>The Words of Hope Trauma Relief Foundation is a nonprofit organization based in Lagos, Nigeria.
-               A major activity of the foundation is to translate emerging findings about the human brain and child
-               development into practical interventions for the way we nurture, protect, enrich, educate and heal
-               children of adverse experiences.
-            </p>
-            <br>
-            <p>The Words of Hope Trauma Relief Foundation is a nonprofit organization based in Lagos, Nigeria.
-               A major activity of the foundation is to translate emerging findings about the human brain and child
-               development into practical interventions for the way we nurture, protect, enrich, educate and heal
-               children of adverse experiences.
-            </p>
+         <div class="row">
+            <div class="blog-left">
+               <img src="assets/images/certificate.jpg" alt="">
+      
+               <h2>Our Programs for 2023-2024</h2>
+               <p>The Words of Hope Trauma Relief Foundation is a nonprofit organization based in Lagos, Nigeria.
+                  A major activity of the foundation is to translate emerging findings about the human brain and child
+                  development into practical interventions for the way we nurture, protect, enrich, educate and heal
+                  children of adverse experiences.
+               </p>
+               <br>
+               <p>The Words of Hope Trauma Relief Foundation is a nonprofit organization based in Lagos, Nigeria.
+                  A major activity of the foundation is to translate emerging findings about the human brain and child
+                  development into practical interventions for the way we nurture, protect, enrich, educate and heal
+                  children of adverse experiences.
+                  The Words of Hope Trauma Relief Foundation is a nonprofit organization based in Lagos, Nigeria.
+                  A major activity of the foundation is to translate emerging findings about the human brain and child
+                  development into practical interventions for the way we nurture, protect, enrich, educate and heal
+                  children of adverse experiences.
+               </p>
+               <br>
+               <p>The Words of Hope Trauma Relief Foundation is a nonprofit organization based in Lagos, Nigeria.
+                  A major activity of the foundation is to translate emerging findings about the human brain and child
+                  development into practical interventions for the way we nurture, protect, enrich, educate and heal
+                  children of adverse experiences.
+               </p>
+               <br>
+               <p>The Words of Hope Trauma Relief Foundation is a nonprofit organization based in Lagos, Nigeria.
+                  A major activity of the foundation is to translate emerging findings about the human brain and child
+                  development into practical interventions for the way we nurture, protect, enrich, educate and heal
+                  children of adverse experiences.
+               </p>
+               <br>
+               <p>The Words of Hope Trauma Relief Foundation is a nonprofit organization based in Lagos, Nigeria.
+                  A major activity of the foundation is to translate emerging findings about the human brain and child
+                  development into practical interventions for the way we nurture, protect, enrich, educate and heal
+                  children of adverse experiences.
+               </p>
 
 
-            <div class="comment-box">
-               <h3>Leave a comment</h3>
+               <div class="comment-box">
+                  <h3>Leave a comment</h3>
 
-               <form class="comment-form">
-                  <input type="text" placeholder="Enter Name">
-                  <input type="email" placeholder="Enter Email">
-                  <textarea rows="5" placeholder="Your Comment"></textarea>
-                  <button type="submit" class="doings-2">POST COMMENT</button>
-               </form>
+                  <form class="comment-form">
+                     <input type="text" placeholder="Enter Name">
+                     <input type="email" placeholder="Enter Email">
+                     <textarea rows="5" placeholder="Your Comment"></textarea>
+                     <button type="submit" class="doings-2">POST COMMENT</button>
+                  </form>
+               </div>
+            </div>
+
+            <div class="blog-right">
+               <h3>Schedule</h3>
+
+               <div>
+                  <span>Marital Therapy</span>
+                  <span>12</span>
+               </div>
+
+               <div>
+                  <span>Marital Therapy</span>
+                  <span>12</span>
+               </div>
+
+               <div>
+                  <span>Marital Therapy</span>
+                  <span>12</span>
+               </div>
+
+               <div>
+                  <span>Marital Therapy</span>
+                  <span>12</span>
+               </div>
+
+               <div>
+                  <span>Marital Therapy</span>
+                  <span>12</span>
+               </div>
+
+               <div>
+                  <span>Marital Therapy</span>
+                  <span>12</span>
+               </div>
+
             </div>
          </div>
+      </section>
 
-         <div class="blog-right">
-            <h3>Schedule</h3>
+      <section class="cta3">
+         <h1 class="ctah3">Schedule a <span style="font-family: Dancing script; font-size: 40px;">free</span> 15-minute
+            consultation</h1>
+         <a href="https://docs.google.com/forms/d/e/1FAIpQLSek_FL1ur663iD3zjXM-MFb6PTQ158rR2pvFbU1ww29rHRDWw/viewform?embedded=true" target="_blank" rel="noopener" width="640" height="1638" frameborder="0" marginheight="0" marginwidth="0" class="doings-5">BOOK A MEETING</a>
+      </section>
 
-            <div>
-               <span>Marital Therapy</span>
-               <span>12</span>
+      <section class="legger">
+         <div class="box-container bd-container-ss">
+
+            <div class="box1">
+               <h3>Words Of Hope Trauma Relief Foundation <i class="fa-solid fa-hands-praying"></i></h3>
+               <p>Lorem ipsum dolor sit. At rem qui recusandae enim inventore non? Eos explicabo assumenda des, placeat.
+               </p>
+               <div class="share">
+                  <a href="" class="fab fa-twitter"></a>
+                  <a href="" class="fab fa-facebook"></a>
+                  <a href="" class="fab fa-instagram"></a>
+                  <a href="" class="fab fa-linkedin"></a>
+               </div>
             </div>
 
-            <div>
-               <span>Marital Therapy</span>
-               <span>12</span>
+            <div class="box1">
+               <h3>Contact Info</h3>
+               <a href="tel:+2348060072992" class="links"><i class="fas fa-phone"></i> +234 806 007 2992 </a>
+               <a href="tel:+2348060072992" class="links"><i class="fas fa-phone"></i> +234 806 007 2992 </a>
+               <a href="mailto:pokonedo@gmail.com" class="links"><i class="fas fa-envelope"></i>pokonedo@gmail.com</a>
+               <a href="" class="links"><i class="fas fa-map-marker-alt"></i> Jakande Estate,Isolo -
+                  101233 </a>
             </div>
 
-            <div>
-               <span>Marital Therapy</span>
-               <span>12</span>
+            <div class="box1">
+               <h3>Quick Links</h3>
+               <a href="index.html" class="links"><i class="fas fa-arrow-right"></i> Home </a>
+               <a href="about.html" class="links"><i class="fas fa-arrow-right"></i> Meet Us </a>
+               <a href="services.html" class="links"><i class="fas fa-arrow-right"></i> Services </a>
+               <a href="supervision.html" class="links"><i class="fas fa-arrow-right"></i> Supervision </a>
+               <a href="fees.html" class="links"><i class="fas fa-arrow-right"></i> Fees </a>
+               <a href="wt2xpct.html" class="links"><i class="fas fa-arrow-right"></i> What To Expect </a>
+               <a href="faq.html" class="links"><i class="fas fa-arrow-right"></i> FAQ</a>
+               <a href="contact.html" class="links"><i class="fas fa-arrow-right"></i> Contact Us</a>
             </div>
 
-            <div>
-               <span>Marital Therapy</span>
-               <span>12</span>
-            </div>
-
-            <div>
-               <span>Marital Therapy</span>
-               <span>12</span>
-            </div>
-
-            <div>
-               <span>Marital Therapy</span>
-               <span>12</span>
+            <div class="box1">
+               <h3>Newsletter</h3>
+               <p>Subscribe for latest updates</p>
+               <input type="email" placeholder="Your Email Address" class="email">
+               <input type="submit" value="Subscribe" class="doings-5">
+               <img src="assets/images/card_img.png" class="payment-img" alt="">
             </div>
 
          </div>
-      </div>
-   </section>
+         <div class="credit">Words Of Hope Trauma Relief Foundation &#169; 2023 | All Rights Reserved | <span><a
+                  href="privacy.html">Privacy Policy</a></span></div>
+      </section>
 
-   <!-- =======CALL TO ACTION===== -->
-   <section class="cta3">
-      <h1 class="ctah3">Schedule a <span style="font-family: Dancing script; font-size: 40px;">free</span> 15-minute
-         consultation</h1>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSek_FL1ur663iD3zjXM-MFb6PTQ158rR2pvFbU1ww29rHRDWw/viewform?embedded=true" target="_blank" rel="noopener" width="640" height="1638" frameborder="0" marginheight="0" marginwidth="0" class="doings-5">BOOK A MEETING</a>
-   </section>
+      <script src="assets/js/main.js"></script>
 
-   <!-- =========== FOOTER SECTION =========== -->
-   <section class="legger">
-      <div class="box-container bd-container-ss">
+      <script src="assets/js/mixitup.min.js"></script>
 
-         <div class="box1">
-            <!-- <img class="menu-icon" src="assets/images/logo123.png" alt=""> -->
-            <h3>Words Of Hope Trauma Relief Foundation <i class="fa-solid fa-hands-praying"></i></h3>
-            <p>Lorem ipsum dolor sit. At rem qui recusandae enim inventore non? Eos explicabo assumenda des, placeat.
-            </p>
-            <div class="share">
-               <a href="" class="fab fa-twitter"></a>
-               <a href="" class="fab fa-facebook"></a>
-               <a href="" class="fab fa-instagram"></a>
-               <a href="" class="fab fa-linkedin"></a>
-            </div>
-         </div>
+      <script src="assets/js/swiper-bundle.min.js"></script>
 
-         <div class="box1">
-            <h3>Contact Info</h3>
-            <a href="tel:+2348060072992" class="links"><i class="fas fa-phone"></i> +234 806 007 2992 </a>
-            <a href="tel:+2348060072992" class="links"><i class="fas fa-phone"></i> +234 806 007 2992 </a>
-            <a href="mailto:pokonedo@gmail.com" class="links"><i class="fas fa-envelope"></i>pokonedo@gmail.com</a>
-            <a href="" class="links"><i class="fas fa-map-marker-alt"></i> Jakande Estate,Isolo -
-               101233 </a>
-         </div>
-
-         <div class="box1">
-            <h3>Quick Links</h3>
-            <a href="index.html" class="links"><i class="fas fa-arrow-right"></i> Home </a>
-            <a href="about.html" class="links"><i class="fas fa-arrow-right"></i> Meet Us </a>
-            <a href="services.html" class="links"><i class="fas fa-arrow-right"></i> Services </a>
-            <a href="supervision.html" class="links"><i class="fas fa-arrow-right"></i> Supervision </a>
-            <a href="fees.html" class="links"><i class="fas fa-arrow-right"></i> Fees </a>
-            <a href="wt2xpct.html" class="links"><i class="fas fa-arrow-right"></i> What To Expect </a>
-            <a href="faq.html" class="links"><i class="fas fa-arrow-right"></i> FAQ</a>
-            <a href="contact.html" class="links"><i class="fas fa-arrow-right"></i> Contact Us</a>
-         </div>
-
-         <div class="box1">
-            <h3>Newsletter</h3>
-            <p>Subscribe for latest updates</p>
-            <input type="email" placeholder="Your Email Address" class="email">
-            <input type="submit" value="Subscribe" class="doings-5">
-            <img src="assets/images/card_img.png" class="payment-img" alt="">
-         </div>
-
-      </div>
-      <div class="credit">Words Of Hope Trauma Relief Foundation &#169; 2023 | All Rights Reserved | <span><a
-               href="privacy.html">Privacy Policy</a></span></div>
-   </section>
-
-   <!--=============== MAIN JS ===============-->
-   <script src="assets/js/main.js"></script>
-
-   <!-- ===== MIXITUP FILTER ===== -->
-   <script src="assets/js/mixitup.min.js"></script>
-
-   <!-- ===== SWIPER JS ===== -->
-   <script src="assets/js/swiper-bundle.min.js"></script>
-
-   <!-- ===== GSAP ===== -->
-   <script src="assets/js/gsap.min.js"></script>
-</body>
+      <script src="assets/js/gsap.min.js"></script>
+   </body>
 
 </html>
