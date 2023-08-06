@@ -1735,10 +1735,6 @@ section.left .contactInfo {
   font-size: 18px;
 }
 
-.blaq{
-  color: hsl(220, 24%, 12%);
-}
-
 .iconGroup .details span:nth-child(1) {
   text-transform: uppercase;
   color: #9fadce;
