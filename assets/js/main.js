@@ -31,6 +31,8 @@ gsap.from('.sub__header', { opacity: 0, duration: 2, delay: 1.4, y: 25, ease: 'e
 gsap.from('.nav__logo, .nav__toggle', { opacity: 0, duration: 1.5, delay: 1, y: 25, ease: 'expo.out' })
 gsap.from('.abts', { opacity: 0, duration: 1.5, delay: .8, y: 25, ease: 'expo.out' })
 gsap.from('.nav__list, .ab1', { opacity: 0, duration: 1.2, delay: 1.3, y: 25, ease: 'expo.out' })
+gsap.from('.delp', { opacity: 0, duration: 1.2, delay: 1.3, y: 25, ease: 'expo.out' })
+gsap.from('.delc', { opacity: 0, duration: 1, delay: 1, y: 25, ease: 'expo.out' })
 // gsap.from('.home__social-icon', {opacity: 0, duration: 2, delay:2.3, y:25, ease:'expo.out'})
 gsap.from('.home__img-2', 1.2, {opacity: 0, y: 200, delay: .1})
 gsap.from('.home__img-3', 1.2, {opacity: 0, y: 200, delay: .5})
