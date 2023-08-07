@@ -1,5 +1,3 @@
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
 @media screen and (max-width: 340px){
    .container{
       margin-inline: 1rem;
@@ -10,7 +8,6 @@
    }
 }
 
-/* For large devices */
 @media screen and (min-width: 1118px){
    .container{
       margin-inline: auto;
@@ -69,14 +66,12 @@
          left: 100%;
          top: .5rem;
       }
-      // Show dropdown menu
       &__item:hover &__menu{
          opacity: 1;
          top: 5.5rem;
          pointer-events: initial;
          transition: top .3s;
       }
-      // Show dropdown submenu
       &__subitem:hover > &__submenu{
          opacity: 1;
          top: 0;

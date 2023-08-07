@@ -1,17 +1,13 @@
-/*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@400;500;700&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 5.5rem;
   --transition: all 300ms ease-in-out;
 
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
   --black-color: hsl(220, 24%, 12%);
   --black-color-light: hsl(220, 24%, 15%);
   --black-color-lighten: hsl(220, 20%, 18%);
@@ -32,8 +28,6 @@
   --extra-light: #ffffff;
   --max-width: 1200px;
 
-  /*========== Font and typography ==========*/
-  /* .5rem = 8px | 1rem = 16px ... */
   --body-font: "Montserrat", sans-serif;
   --second-font: "Lora", serif;
   --biggest-font-size: 2.25rem;
@@ -44,17 +38,14 @@
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
 
-  /*========== Font weight ==========*/
   --font-regular: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
   --font-bold: 700;
 
-  /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
 
-  /*===== Margenes =====*/
   --mb-1: .5rem;
   --mb-2: 1rem;
   --mb-3: 1.5rem;
@@ -62,7 +53,6 @@
   --mb-5: 2.5rem;
   --mb-6: 3rem;
 
-  /* =====Light colour==== */
   --mainColor: #64bcf4;
   --hoverColor: #5bacdf;
   --backgroundColor: #f1f8fc;
@@ -71,8 +61,6 @@
   --lightOne: #919191;
   --lightTwo: #aaa;
   
-  
-  /* =====Dark colour==== */
   --mainColor: #64bcf4;
   --hoverColor: #5bacdf;
   --backgroundColor: #192e3a;
@@ -82,7 +70,6 @@
   --lightTwo: #e7e3e3;
 }
 
-/*========== Responsive typography ==========*/
 @media screen and (min-width: 1024px) {
   :root {
     --biggest-font-size: 4rem;
@@ -95,7 +82,6 @@
   }
 }
 
-/*=============== BASE ===============*/
 *,
 ::before,
 ::after {
@@ -118,15 +104,12 @@ html {
 
 ul {
   list-style: none;
-  /* Color highlighting when pressed on mobile devices */
-  -webkit-tap-highlight-color: transparent;
 }
 
 a {
   text-decoration: none;
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 90%;
   margin: 0 auto;
@@ -134,20 +117,15 @@ a {
   position: relative;
 }
 
-/*=============== HEADER ===============*/
 .header {
   position: fixed;
   text-transform: uppercase;
   top: 0;
   left: 0;
   width: 100%;
-  /* box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3); */
   z-index: var(--z-fixed);
-  /* background-color: #9fadce; */
-  /* height: var(--header-height) + 1rem; */
 }
 
-/*=============== NAV ===============*/
 .nav {
   height: var(--header-height);
 }
@@ -170,8 +148,6 @@ a {
   align-items: center;
   column-gap: .25rem;
   font-weight: var(--font-semi-bold);
-  /* Color highlighting when pressed on mobile devices */
-  -webkit-tap-highlight-color: transparent;
 }
 
 .nav__logo i {
@@ -201,7 +177,6 @@ a {
   opacity: 0;
 }
 
-/* Navigation for mobile devices */
 @media screen and (max-width: 1118px) {
   .nav__menu {
     position: absolute;
@@ -220,7 +195,6 @@ a {
   }
 
   .nav__list {
-    /* background-color: #9fadce; */
     background-color: #ffffff;
     padding-top: 1rem;
   }
@@ -242,14 +216,12 @@ a {
   color: #000;
 }
 
-/* Show menu */
 .show-menu {
   opacity: 1;
   top: var(--header-height);
   pointer-events: initial;
 }
 
-/* Show icon */
 .show-icon .nav__burger {
   opacity: 0;
   transform: rotate(90deg);
@@ -260,7 +232,6 @@ a {
   transform: rotate(90deg);
 }
 
-/*=============== DROPDOWN ===============*/
 .dropdown__item {
   cursor: pointer;
 }
@@ -302,19 +273,16 @@ a {
   transition: max-height .4s ease-out;
 }
 
-/* Show dropdown menu & submenu */
 .dropdown__item:hover .dropdown__menu,
 .dropdown__subitem:hover>.dropdown__submenu {
   max-height: 1000px;
   transition: max-height .4s ease-in;
 }
 
-/* Rotate dropdown icon */
 .dropdown__item:hover .dropdown__arrow {
   transform: rotate(180deg);
 }
 
-/*=============== DROPDOWN SUBMENU ===============*/
 .dropdown__add {
   margin-left: auto;
 }
@@ -323,8 +291,6 @@ a {
   background-color: var(--black-color-lighten);
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
 @media screen and (max-width: 340px) {
   .container {
     margin-inline: 1rem;
@@ -335,7 +301,6 @@ a {
   }
 }
 
-/* For large devices */
 @media screen and (min-width: 1118px) {
   .container {
     margin-inline: auto;
@@ -400,7 +365,6 @@ a {
     top: .5rem;
   }
 
-  /* Show dropdown menu */
   .dropdown__item:hover .dropdown__menu {
     opacity: 1;
     top: 5.5rem;
@@ -409,7 +373,6 @@ a {
     transition: max-height .4s ease-in;
   }
 
-  /* Show dropdown submenu */
   .dropdown__subitem:hover>.dropdown__submenu {
     opacity: 1;
     top: 0;
@@ -418,13 +381,11 @@ a {
   }
 }
 
-/* HEADER LOGO IMAGE*/
 .menu-icon {
   width: 90px;
   display: flex;
 }
 
-/* =====HOME/LANDING PAGE===== */
 .text-box {
   width: 90%;
   color: #fff;
@@ -495,7 +456,6 @@ a {
   border: 3px;
 }
 
-/* ======Media query for layout, footer and landing======= */
 @media(max-width: 700px) {
   .text-box h1 {
     font-size: 25.7px;
@@ -515,7 +475,6 @@ a {
   }
 }
 
-/* =======LAYOUT====== */
 .bd-container {
   width: 100%;
   padding: 10px 8%;
@@ -571,6 +530,7 @@ h3 {
   grid-template-rows: repeat(4, 1fr);
   gap: 1rem;
 }
+
 .grid5 {
   display: grid;
   gap: 1rem;
@@ -594,7 +554,6 @@ h3 {
   grid-template-columns: repeat(2, .8fr);
 }
 
-/*===== SCROLL TOP =====*/
 .scrolltop {
   position: fixed;
   right: 1rem;
@@ -619,27 +578,23 @@ h3 {
   color: var(--black-color-lighten);
 }
 
-/* Show scroll top */
 .show-scroll {
   visibility: visible;
   bottom: 1.5rem;
 }
 
-/* ========CALL TO ACTION and its media query====== */
 .cta {
   margin: 100px auto;
 }
 
 .dfp {
   background-image: linear-gradient(rgba(208, 206, 206, 0.5), rgba(26, 66, 116, 0.719)), url(../images/couch78.jpg);
-  /* 360 */
 }
 
 .quote {
   background-color: #fff;
   width: 100%;
 }
-
 
 .ctah {
   color: var(--black-color);
@@ -649,13 +604,6 @@ h3 {
 @media(max-width: 700px) {
   .ctah {
     font-size: 24px;
-  }
-}
-
-/*===== SERVICES and its media query=====*/
-@media(max-width: 700px) {
-  .wwo {
-    width: 100%;
   }
 }
 
@@ -724,7 +672,6 @@ h3 {
   text-align-last: auto;
 }
 
-/* work */
 .title {
   margin-bottom: 5rem;
 }
@@ -853,7 +800,6 @@ h3 {
   }
 }
 
-/* =======ABOUT SECTION===== */
 .section {
   padding-top: 10px;
 }
@@ -911,7 +857,6 @@ h3 {
   padding: 10px;
 }
 
-/* ==================ABOUT PAGE - about.html==================== */
 .abts {
   text-transform: uppercase;
   color: hsl(0, 0%, 1000000%);
@@ -1031,7 +976,6 @@ h3 {
   clear: both;
 }
 
-/* ======POWERPOINT======  repeated "about" section, same approach */
 .pimg {
   width: 80%;
 }
@@ -1070,8 +1014,6 @@ h3 {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-
-/* ============BLOG CONTENT====== */
 .blog-content {
   width: 80%;
   margin: auto;
@@ -1125,7 +1067,6 @@ h3 {
   box-sizing: border-box;
 }
 
-/* comment box in blog page */
 .comment-box {
   border: 1px solid #ccc;
   margin: 50px 0;
@@ -1158,7 +1099,6 @@ h3 {
   }
 }
 
-/* SUPERVISION  */
 #supervision {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/low1.jpg') center/cover no-repeat fixed;
   height: auto;
@@ -1168,14 +1108,6 @@ h3 {
   #supervision {
     height: auto;
   }
-}
-
-#serve {
-  background-color: var(--first-color-lighten);
-  color: var(--black-color-light);
-  min-height: auto;
-  background-size: 100%;
-  background-position: center;
 }
 
 .headline {
@@ -1292,7 +1224,6 @@ h3 {
     font-size: 38px;
   }
 }
-
 
 .grid-container {
   display: grid;
@@ -1430,9 +1361,7 @@ h3 {
   transition: scale(1.1);
 }
 
-/* FAQ PAGE  */
 .faq1{
-  /* background-color: #f5f5ff; */
   padding: 84px 84px 144px 134px;
   display: flex;
   flex-direction: column;
@@ -1515,6 +1444,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  -webkit-user-select: none;
   user-select: none;
 }
 
@@ -1636,10 +1566,8 @@ h3 {
   }
 }
 
-/* contact page */
 .container3 {
   width: 100%;
-  /* min-height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1779,7 +1707,6 @@ section.left .socialMedia {
   color: #9fadce;
 }
 
-/* Code for the right section (column) */
 .row3 section.right .messageForm {
   display: flex;
   justify-content: space-between;
@@ -1906,7 +1833,6 @@ textarea::-webkit-scrollbar-thumb {
   padding-top: 50px;
 }
 
-/* team  */
 .team{
 	position: relative;
 	width: 100%;
@@ -2043,8 +1969,8 @@ div.desc {
   height: 100%;
   border-radius: 4px;
   object-fit: cover;
-  user-select: none;
   -webkit-user-select: none;
+  user-select: none;
 }
 
 .card .info{
@@ -2176,7 +2102,6 @@ div.desc {
   padding-top: 40px;
 }
 
-/* fees page  */
 .container-fees{
   width: 100%;
 }
@@ -2258,11 +2183,9 @@ div.desc {
 
 .services__data{
   padding: 3rem 1rem;
-  /* background-color: #fff; */
   border-radius: .5rem;
   text-align: center;
   transition: .4s;
-  /* box-shadow: 0 4px 6px rgba(174,190,205,.3); */
 }
 
 .services__icon{
@@ -2333,7 +2256,6 @@ div.desc {
 
 .testimonials-heading{
   letter-spacing: 1px;
-  /* margin: 30px 0; */
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
@@ -2541,8 +2463,6 @@ div.desc {
 }
 
 .legger{
-  /* background: #4c4c4cdb; */
-  /* background: #000; */
   background: #e9e9e9;
 }
 
@@ -2629,7 +2549,6 @@ div.desc {
   width: 100%;
   font-weight: 550;
   border-top: .2rem solid rgba(0, 0, 0, 0.1);
-  /* padding-bottom: 10px; */
 }
 
 .legger .credit span a{
@@ -2705,7 +2624,6 @@ header , body{
   border: 0.5rem solid var(--extra-light);
   border-radius: 2rem;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
-  /* padding-top: 10px; */
 }
 
 .header__image img:nth-child(1) {
@@ -2739,7 +2657,6 @@ header , body{
 .header__content h1 {
   font-size: 2.8rem;
   font-weight: 800;
-  /* text-align: center; */
   color: var(--text-dark);
 }
 
@@ -2821,15 +2738,6 @@ header , body{
   .header__image{
     display: none;
   }
-
-  .header__container{
-    /* background-image: linear-gradient(#9fadce, rgba(255, 255, 255, 0.715)), url(../images/header-2.jpg); */
-    /* background-image: linear-gradient(#9fadce, rgba(255, 255, 255, 0.7)); */
-    background-image: linear-gradient(#fff, #ffffffa9, rgba(159, 173, 206, 0.722) ,#ffffffb7,rgb(255, 255, 255)), url(../images/header-1.jpg);
-    /* background-image: linear-gradient(rgb(255, 255, 255), rgba(0, 0, 0, 0.289)) ,url(../images/desktop-wallpaper-sky-blue-nature-in-2020-sky-aesthetic-sunset-blue-sky-background-morning-sky.jpg); */
-    background-size: cover;
-    background-position: center;
-  }
   
   .header__content {
     text-align: center;
@@ -2854,21 +2762,18 @@ header , body{
 
   .pol a{
     color: #fff;
-    /* background: #000; */
   }
 }
 
 .pol a{
   font-weight: 600;
   color: #000;
-  /* color: var(--black-color); */
 }
 
 .container7 {
   position: relative;
   max-width: 700px;
   width: 100%;
-  /* background: #fff; */
   background: var(--secondary-color);
   padding: 25px;
   border-radius: 8px;
@@ -2983,7 +2888,6 @@ header , body{
   background: #7a719b;
 }
 
-/*Responsive*/
 @media screen and (max-width: 500px) {
   .form .column {
     flex-wrap: wrap;
@@ -3031,12 +2935,10 @@ header , body{
 .home__subtitle{
   font-size: var(--h2-font-size);
   color: var(--first-color);
-  /* letter-spacing: 3px; */
   font-family: 'Dancing script';
 }
 
 .home__title{
-  /* font-size: var(--biggest-font-size); */
   font-family: var(--second-font);
   color: var(--title-color);
   font-size: 2rem;
@@ -3086,8 +2988,6 @@ header , body{
   bottom: 0;
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
 @media screen and (max-width: 305px) {
   .container-g{
     margin-inline: 1rem;
@@ -3098,7 +2998,6 @@ header , body{
   }
 }
 
-/* For taller devices */
 @media screen and (min-width: 376px) and (min-height: 800px) {
   .home__container{
     padding-top: 10rem;
@@ -3110,7 +3009,6 @@ header , body{
   }
 }
 
-/* For medium devices */
 @media screen and (min-width: 480px) {
   .home__content{
     max-width: 305px;
@@ -3126,7 +3024,6 @@ header , body{
   }
 }
 
-/* For large devices */
 @media screen and (min-width: 1023px) {
   .home__content{
     max-width: 550px;
@@ -3188,8 +3085,6 @@ header , body{
   }
 }
 
-
-/* For 2K resolutions (2048 x 1152) */
 @media screen and (min-width: 2048px) {
   .container-g{
     max-width: 1300px;
@@ -3200,7 +3095,6 @@ header , body{
     padding-top: 15rem;
   }
 }
-
 
 .pt1{
   padding-top: 30px;
