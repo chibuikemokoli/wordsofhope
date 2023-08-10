@@ -70,6 +70,18 @@ function checkCookie() {
   }
 }
 
+var className = "inverted";
+var scrollTrigger = 60;
+
+window.onscroll = function() {
+  // We add pageYOffset for compatibility with IE.
+  if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
+    document.getElementsByTagName("header")[0].classList.add(className);
+  } else {
+    document.getElementsByTagName("header")[0].classList.remove(className);
+  }
+};
+
 // disabling inspect element
 // document.addEventListener("contextmenu", function(e){
 //   e.preventDefault(); //this prevents right click
@@ -111,10 +123,3 @@ form.addEventListener('submit', e => {
         })
         .catch(error => console.error('Error!', error.message))
 })
-
-function scrollHeader(){
-  const header = document.getElementById('header')
-  if(this.scrollY >= 200) header.classList.add('scroll-header');
-  else header.classList.remove('scroll-header')
-}
-window.addEventListener('scroll',scrollHeader)

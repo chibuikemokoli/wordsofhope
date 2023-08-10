@@ -209,7 +209,7 @@
             </section>
 
             <section class="col right">
-               <form class="messageForm" action="" method="">
+               <form class="messageForm" name="submit-to-google-sheet" action="thank-you.html" method="post">
 
                   <div class="inputGroup halfWidth">
                      <input type="text" name="name" required="required">
@@ -231,8 +231,20 @@
                      <label>Your Message</label>
                   </div>
 
+                  <div class="row9">
+                     <label>
+                        <input type="checkbox" id="check" onclick="enable()" required>
+                     </label>
+                     I agree to the
+                     <span>
+                        <a href="privacy.html"> Privacy Policy</a>. You must accept the terms and conditions before sending your message.
+                     </span>
+                  </div>
+
                   <div class="inputGroup fullWidth">
-                     <button>Send Message</button>
+                     <button type="submit" disabled="true" id="btn">
+                        <a href="thank-you.html">Send Message</a></button>
+                     <span id="msg"></span>
                   </div>
 
                </form>
@@ -305,6 +317,19 @@
       <script src="assets/js/swiper-bundle.min.js"></script>
 
       <script src="assets/js/gsap.min.js"></script>
+
+      <script>
+         function enable() {
+            var check = document.getElementById("check");
+            var btn = document.getElementById("btn");
+            if (check.checked) {
+               btn.removeAttribute("disabled");
+            }
+            else {
+               btn.disabled = "true";
+            }
+         }
+      </script>
    </body>
 
 </html>
