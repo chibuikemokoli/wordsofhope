@@ -127,7 +127,7 @@ a {
   z-index: var(--z-fixed);
 }
 
-.inverted {
+.inverted, .subbed {
   /* background-color: #fff; */
   background-color: #b0d1df;
   background-image: url(../images/footer_background.png);
