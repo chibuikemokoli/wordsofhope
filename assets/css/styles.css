@@ -60,14 +60,6 @@
   --darkTwo: #45424b;
   --lightOne: #919191;
   --lightTwo: #aaa;
-  
-  --mainColor: #64bcf4;
-  --hoverColor: #5bacdf;
-  --backgroundColor: #192e3a;
-  --darkOne: #f3f3f3;
-  --darkTwo: #fff;
-  --lightOne: #ccc;
-  --lightTwo: #e7e3e3;
 }
 
 @media screen and (min-width: 1024px) {
@@ -2151,7 +2143,7 @@ div.desc {
 
 .price-col{
   /* background-color: #b0d1df; */
-  background-color: #99b04c;
+  background-color: #4a6d8d;
   padding: 10% 15%;
   border-radius: 10px;
   text-align: center;
@@ -2159,6 +2151,7 @@ div.desc {
 
 .price-col p{
   font-size: 22px;
+  font-weight: 600;
 }
 
 .price-col h3{
@@ -2172,7 +2165,6 @@ div.desc {
 
 .price-col ul{
   margin: 20px 0;
-  /* color: #ddd; */
   font-weight: 600;
   list-style: none;
 }
@@ -2183,7 +2175,7 @@ div.desc {
 
 .price-col ul li::before{
   content: '\2022';
-  color: 3px solid #e46e0d;
+  color: #e46e0d;
   font-weight: bolder;
   margin-right: 8px;
 }
