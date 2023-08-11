@@ -1159,7 +1159,7 @@ h3 {
   font-family: 'Dancing script';
   font-size: 50px;
   font-weight: 500;
-  color: #b04c90;
+  color: #99b04c;
 }
 
 .cta-1 span {
@@ -1167,7 +1167,7 @@ h3 {
   font-family: 'Dancing script';
   font-size: 50px;
   font-weight: 500;
-  color: #b04c90;
+  color: #99b04c;
 }
 
 .cta-1{
@@ -1198,6 +1198,10 @@ h3 {
   color: #fff;
   margin-bottom: 40px;
   padding: 0;
+}
+
+.ctah3 span{
+  color: #4cb054;
 }
 
 @media(max-width: 700px){
@@ -1657,7 +1661,7 @@ section.left .contactInfo {
 .iconGroup .icon {
   width: 45px;
   height: 45px;
-  border: 2px solid #87CEEB;
+  border: 4px solid #4cb054;
   border-radius: 50%;
   margin-right: 20px;
   position: relative;
@@ -1679,7 +1683,7 @@ section.left .contactInfo {
 .iconGroup .details span:nth-child(1) {
   text-transform: uppercase;
   font-weight: 900;
-  color: #87CEEB;
+  color: #4cb054;
 }
 
 section.left .socialMedia {
@@ -1713,13 +1717,13 @@ section.left .socialMedia {
 .socialMedia a:hover {
   transform: translateY(-5px);
   background-color: #2e2e2e;
-  color: #87CEEB;
-  border: 1px solid #9fadce;
+  color: #b0d1df;
+  border: 1px solid #b0d1df;
   ;
 }
 
 .socialMedia a:hover i {
-  color: #87CEEB;
+  color: #b0d1df;
 }
 
 .row3 section.right .messageForm {
@@ -1770,7 +1774,7 @@ textarea::-webkit-scrollbar-track {
 }
 
 textarea::-webkit-scrollbar-thumb {
-  background-color: #9fadce;
+  background-color: #b0d1df;
   border-radius: 15px;
 }
 
@@ -1821,7 +1825,7 @@ textarea::-webkit-scrollbar-thumb {
   background-color: #2e2e2e;
   color: var(--first-color-lighten);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-  border: 1px solid #87CEEB;
+  border: 1px solid #b0d1df;
 }
 
 @media(max-width: 1100px) {
@@ -2146,7 +2150,8 @@ div.desc {
 }
 
 .price-col{
-  background-color: #b0d1df;
+  /* background-color: #b0d1df; */
+  background-color: #99b04c;
   padding: 10% 15%;
   border-radius: 10px;
   text-align: center;
@@ -2178,7 +2183,7 @@ div.desc {
 
 .price-col ul li::before{
   content: '\2022';
-  color: #1c0de4;
+  color: 3px solid #e46e0d;
   font-weight: bolder;
   margin-right: 8px;
 }
