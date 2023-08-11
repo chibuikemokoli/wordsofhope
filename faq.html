@@ -299,24 +299,6 @@
          </div>
       </section>
 
-      <script>
-         var faq1 = document.getElementsByClassName("faq-box-question");
-         var i;
-         for(i = 0; i < faq1.length; i++){
-            faq1[i].addEventListener("click", function(){
-               this.classList.toggle("active");
-
-               var body = this.nextElementSibling;
-               if(body.style.maxHeight === "100px"){
-                  body.style.maxHeight = "0px";
-               }
-               else{
-                  body.style.maxHeight = "100px"
-               }
-            });
-         }
-      </script>
-
       <section id="supervision" class="vh-10 fle py-">
          <div class="contaier">
             <center>
@@ -390,6 +372,24 @@
       <script src="assets/js/swiper-bundle.min.js"></script>
 
       <script src="assets/js/gsap.min.js"></script>
+
+      <script>
+         var faq1 = document.getElementsByClassName("faq-box-question");
+         var i;
+         for(i = 0; i < faq1.length; i++){
+            faq1[i].addEventListener("click", function(){
+               this.classList.toggle("active");
+
+               var body = this.nextElementSibling;
+               if(body.style.maxHeight === "100px"){
+                  body.style.maxHeight = "0px";
+               }
+               else{
+                  body.style.maxHeight = "100px"
+               }
+            });
+         }
+      </script>
    </body>
 
 </html>

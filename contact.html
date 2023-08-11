@@ -155,102 +155,106 @@
          </center>
       </section>
 
-      <div class="container3 delp">
-         <main class="row3">
-            <section class="col left">
-               <div class="contactTitle">
-                  <h2>Get In Touch With Us</h2>
-                  <p>For more information, please contact us through the form.</p>
-               </div>
+      <section>
+         <div class="container3 delp">
+            <main class="row3">
+               <section class="col left">
+                  <div class="contactTitle">
+                     <h2>Get In Touch With Us</h2>
+                     <p>For more information, please contact us through the form.</p>
+                  </div>
 
-               <div class="contactInfo">
-                  <div class="iconGroup">
-                     <div class="icon">
-                        <i class="fa-solid fa-phone"></i>
+                  <div class="contactInfo">
+                     <div class="iconGroup">
+                        <div class="icon">
+                           <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="details">
+                           <span>Phone</span>
+                           <a href="tel:+23480600722992">
+                              <span style="color: hsl(220, 24%, 12%);">(+234) - 806 007 2992</span>
+                           </a>
+                        </div>
                      </div>
-                     <div class="details">
-                        <span>Phone</span>
-                        <a href="tel:+23480600722992">
-                           <span style="color: hsl(220, 24%, 12%);">(+234) - 806 007 2992</span>
-                        </a>
+
+                     <div class="iconGroup">
+                        <div class="icon">
+                           <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="details">
+                           <span>Email</span>
+                           <a href="mailto:pokonedo@gmail.com">
+                              <span style="color: hsl(220, 24%, 12%);">pokonedo@gmail.com</span>
+                           </a>
+                        </div>
+                     </div>
+
+                     <div class="iconGroup">
+                        <div class="icon">
+                           <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="details">
+                           <span>Location</span>
+                           <a href="#">
+                              <span style="color: hsl(220, 24%, 12%);">Jakande, Isolo</span>
+                           </a>
+                        </div>
                      </div>
                   </div>
 
-                  <div class="iconGroup">
-                     <div class="icon">
-                        <i class="fa-solid fa-envelope"></i>
+                  <div class="socialMedia">
+                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </div>
+               </section>
+
+               <section class="col right">
+                  <form class="messageForm" name="submit-to-google-sheet" action="thank-you.html" method="fetch">
+
+                     <div class="inputGroup halfWidth">
+                        <input type="text" name="name" required="required">
+                        <label>Your Name</label>
                      </div>
-                     <div class="details">
-                        <span>Email</span>
-                        <a href="mailto:pokonedo@gmail.com">
-                           <span style="color: hsl(220, 24%, 12%);">pokonedo@gmail.com</span>
-                        </a>
+
+                     <div class="inputGroup halfWidth">
+                        <input type="email" name="email" required="required">
+                        <label>Your Email</label>
                      </div>
-                  </div>
 
-                  <div class="iconGroup">
-                     <div class="icon">
-                        <i class="fa-solid fa-location-dot"></i>
+                     <div class="inputGroup fullWidth">
+                        <input type="text" name="subject" required="required">
+                        <label>Subject</label>
                      </div>
-                     <div class="details">
-                        <span>Location</span>
-                        <span>Jakande, Isolo</span>
+
+                     <div class="inputGroup fullWidth">
+                        <textarea rows="8" name="message" required="required"></textarea>
+                        <label>Your Message</label>
                      </div>
-                  </div>
 
-               </div>
+                     <div class="row9">
+                        <label>
+                           <input type="checkbox" id="check" onclick="enable()" required style="-webkit-appearance:checkbox;">
+                           
+                        </label>
+                        I agree to the
+                        <span>
+                           <a href="privacy.html"> Privacy Policy</a>. You must accept the terms and conditions before sending your message.
+                        </span>
+                     </div>
 
-               <div class="socialMedia">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-               </div>
-            </section>
+                     <div class="inputGroup fullWidth">
+                        <button type="submit" disabled="true" id="btn">
+                           <a href="thank-you.html">Send Message</a></button>
+                        <span id="msg"></span>
+                     </div>
 
-            <section class="col right">
-               <form class="messageForm" name="submit-to-google-sheet" action="thank-you.html" method="post">
-
-                  <div class="inputGroup halfWidth">
-                     <input type="text" name="name" required="required">
-                     <label>Your Name</label>
-                  </div>
-
-                  <div class="inputGroup halfWidth">
-                     <input type="email" name="email" required="required">
-                     <label>Your Email</label>
-                  </div>
-
-                  <div class="inputGroup fullWidth">
-                     <input type="text" name="subject" required="required">
-                     <label>Subject</label>
-                  </div>
-
-                  <div class="inputGroup fullWidth">
-                     <textarea rows="8" name="message" required="required"></textarea>
-                     <label>Your Message</label>
-                  </div>
-
-                  <div class="row9">
-                     <label>
-                        <input type="checkbox" id="check" onclick="enable()" required>
-                     </label>
-                     I agree to the
-                     <span>
-                        <a href="privacy.html"> Privacy Policy</a>. You must accept the terms and conditions before sending your message.
-                     </span>
-                  </div>
-
-                  <div class="inputGroup fullWidth">
-                     <button type="submit" disabled="true" id="btn">
-                        <a href="thank-you.html">Send Message</a></button>
-                     <span id="msg"></span>
-                  </div>
-
-               </form>
-            </section>
-         </main>
-      </div>
+                  </form>
+               </section>
+            </main>
+         </div>
+      </section>
 
       <br>
       <br>

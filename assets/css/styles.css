@@ -129,8 +129,9 @@ a {
 
 .inverted {
   /* background-color: #fff; */
+  background-color: #b0d1df;
   background-image: url(../images/footer_background.png);
-  box-shadow: 0 3px 5px 0.3px rgba(0,0,0,0.1);
+  /* box-shadow: 0 3px 5px 0.3px rgba(0,0,0,0.1); */
 }
 
 .nav {
@@ -202,7 +203,8 @@ a {
   }
 
   .nav__list {
-    background-color: #ffffff;
+  
+    background-color: #b0d1df;
     padding-top: 1rem;
   }
 }
@@ -389,7 +391,7 @@ a {
 }
 
 .menu-icon {
-  width: 90px;
+  width: 110px;
   display: flex;
 }
 
@@ -708,11 +710,11 @@ h3 {
   background-position: center;
   width: 100%;
   height: auto;
-  background-color: #a9bfdc;
+  background-color: #b0d1df;
 }
 
 #swork {
-  background-color: #a9bfdc;
+  background-color: #b0d1df;
   color: var(--first-color-lighten);
   background-size: auto;
   height: 70vh;
@@ -1155,7 +1157,7 @@ h3 {
   font-family: 'Dancing script';
   font-size: 50px;
   font-weight: 500;
-  color: #5a8fda;
+  color: #b04c90;
 }
 
 .cta-1 span {
@@ -1163,7 +1165,7 @@ h3 {
   font-family: 'Dancing script';
   font-size: 50px;
   font-weight: 500;
-  color: #ba4d29;
+  color: #b04c90;
 }
 
 .cta-1{
@@ -1591,7 +1593,7 @@ h3 {
   max-width: 1100px;
 }
 
-.row3 section.col {
+.row3 section .col {
   display: flex;
   flex-direction: column;
 }
@@ -1653,7 +1655,7 @@ section.left .contactInfo {
 .iconGroup .icon {
   width: 45px;
   height: 45px;
-  border: 2px solid #9fadce;
+  border: 2px solid #87CEEB;
   border-radius: 50%;
   margin-right: 20px;
   position: relative;
@@ -1674,7 +1676,8 @@ section.left .contactInfo {
 
 .iconGroup .details span:nth-child(1) {
   text-transform: uppercase;
-  color: #9fadce;
+  font-weight: 900;
+  color: #87CEEB;
 }
 
 section.left .socialMedia {
@@ -1692,7 +1695,8 @@ section.left .socialMedia {
   text-align: center;
   margin-right: 15px;
   border-radius: 5px;
-  background-color: #9fadce;
+  /* background-color: #87CEEB; */
+  background-color: #555555bc;
   transition: .4s;
 }
 
@@ -1707,13 +1711,13 @@ section.left .socialMedia {
 .socialMedia a:hover {
   transform: translateY(-5px);
   background-color: #2e2e2e;
-  color: #9fadce;
+  color: #87CEEB;
   border: 1px solid #9fadce;
   ;
 }
 
 .socialMedia a:hover i {
-  color: #9fadce;
+  color: #87CEEB;
 }
 
 .row3 section.right .messageForm {
@@ -1790,6 +1794,14 @@ textarea::-webkit-scrollbar-thumb {
   font-size: 16px;
 }
 
+.inputGroup button a{
+  color: #000;
+}
+
+.inputGroup button a:hover{
+  color: #fff;
+}
+
 .inputGroup button {
   padding: 8px 16px;
   font-size: 18px;
@@ -1807,7 +1819,7 @@ textarea::-webkit-scrollbar-thumb {
   background-color: #2e2e2e;
   color: var(--first-color-lighten);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-  border: 1px solid #9fadce;
+  border: 1px solid #87CEEB;
 }
 
 @media(max-width: 1100px) {
@@ -2132,10 +2144,9 @@ div.desc {
 }
 
 .price-col{
-  background: #1f283b;
+  background-color: #b0d1df;
   padding: 10% 15%;
   border-radius: 10px;
-  color: #fff;
   text-align: center;
 }
 
@@ -2154,7 +2165,8 @@ div.desc {
 
 .price-col ul{
   margin: 20px 0;
-  color: #ddd;
+  /* color: #ddd; */
+  font-weight: 600;
   list-style: none;
 }
 
@@ -2164,8 +2176,8 @@ div.desc {
 
 .price-col ul li::before{
   content: '\2022';
-  color: #78a3d7;
-  font-weight: bold;
+  color: #1c0de4;
+  font-weight: bolder;
   margin-right: 8px;
 }
 
@@ -2474,7 +2486,7 @@ div.desc {
 .legger{
   background-image: url(../images/footer_background.png);
   background-position: center;
-  background-size: cover;
+  background-size: 11000px;
 }
 
 .legger .box-container{
