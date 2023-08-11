@@ -2143,10 +2143,12 @@ div.desc {
 
 .price-col{
   /* background-color: #b0d1df; */
-  background-color: #4a6d8d;
+  /* background-color: #4a6d8d; */
+  background: #000000;
   padding: 10% 15%;
   border-radius: 10px;
   text-align: center;
+  color: #b0d1df;
 }
 
 .price-col p{
@@ -2175,7 +2177,7 @@ div.desc {
 
 .price-col ul li::before{
   content: '\2022';
-  color: #e46e0d;
+  color: #4a6d8d;
   font-weight: bolder;
   margin-right: 8px;
 }
