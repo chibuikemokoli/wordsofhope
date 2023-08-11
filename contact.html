@@ -211,43 +211,33 @@
                </section>
 
                <section class="col right">
-                  <form class="messageForm" name="submit-to-google-sheet" action="thank-you.html" method="fetch">
+                  <form class="messageForm" name="submit-to-google-sheet" action="" method="post">
 
                      <div class="inputGroup halfWidth">
-                        <input type="text" name="name" required="required">
+                        <input type="text" name="Name" required="required">
                         <label>Your Name</label>
                      </div>
 
                      <div class="inputGroup halfWidth">
-                        <input type="email" name="email" required="required">
+                        <input type="email" name="Email" required="required">
                         <label>Your Email</label>
                      </div>
 
                      <div class="inputGroup fullWidth">
-                        <input type="text" name="subject" required="required">
+                        <input type="text" name="Subject" required="required">
                         <label>Subject</label>
                      </div>
 
                      <div class="inputGroup fullWidth">
-                        <textarea rows="8" name="message" required="required"></textarea>
+                        <textarea rows="8" name="Message" required="required"></textarea>
                         <label>Your Message</label>
                      </div>
 
-                     <div class="row9">
-                        <label>
-                           <input type="checkbox" id="check" onclick="enable()" required style="-webkit-appearance:checkbox;">
-                           
-                        </label>
-                        I agree to the
-                        <span>
-                           <a href="privacy.html"> Privacy Policy</a>. You must accept the terms and conditions before sending your message.
-                        </span>
-                     </div>
-
                      <div class="inputGroup fullWidth">
-                        <button type="submit" disabled="true" id="btn">
-                           <a href="thank-you.html">Send Message</a></button>
-                        <span id="msg"></span>
+                        <button type="submit">
+                           Send Message
+                        </button>
+                        <span id="msg" ></span>
                      </div>
 
                   </form>
