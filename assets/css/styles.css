@@ -130,7 +130,9 @@ a {
 .inverted, .subbed {
   /* background-color: #fff; */
   background-color: #b0d1df;
-  background-image: url(../images/footer_background.png);
+  background-image: url(../images/title.png);
+  background-position: center;
+  background-size: cover;
   /* box-shadow: 0 3px 5px 0.3px rgba(0,0,0,0.1); */
 }
 
@@ -870,16 +872,16 @@ h3 {
   text-transform: uppercase;
   color: hsl(0, 0%, 0%);
   background-position: center;
-  background-image: linear-gradient(#555, #55555525), url(../images/footer_background.png);
+  background-image: url(../images/title.png);
   background-size: cover;
   border: 3px;
   width: 100%;
   top: auto;
   left: 0;
-  /* box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3); */
+  box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
   padding: 18px;
-  /* background-image: linear-gradient(#9fadce, rgba(0, 0, 0)); */
   text-align: center;
+  background-color: #b0d1df;
 }
 
 .about-us {
@@ -2486,7 +2488,8 @@ div.desc {
 .legger{
   background-image: url(../images/footer_background.png);
   background-position: center;
-  background-size: 11000px;
+  background-size: 1100%;
+  background-color: #b0d1df91;
 }
 
 .legger .box-container{
