@@ -494,6 +494,10 @@ a {
   min-height: 100vh;
 }
 
+.vh-30 {
+  min-height: 30vh;
+}
+
 h1,
 h2,
 h3 {
@@ -591,10 +595,6 @@ h3 {
 
 .cta {
   margin: 100px auto;
-}
-
-.dfp {
-  background-image: linear-gradient(rgba(208, 206, 206, 0.5), rgba(26, 66, 116, 0.719)), url(../images/couch78.jpg);
 }
 
 .quote {
@@ -707,6 +707,9 @@ h3 {
   background-position: center;
   width: 100%;
   height: auto;
+  /* background-color: #555e55; */
+  background-image: url(../images/footer_background.png);
+  background-size: 1100%;
   background-color: #b0d1df;
 }
 
@@ -714,8 +717,10 @@ h3 {
   background-color: #b0d1df;
   color: var(--first-color-lighten);
   background-size: auto;
-  height: 70vh;
+  /* height: 70vh; */
   background-position: center;
+  background-image: url(../images/footer_background.png);
+  background-size: 1100%;
   width: 100%;
 }
 
@@ -1107,6 +1112,11 @@ h3 {
   }
 }
 
+#thanks{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/low1.jpg') center/cover no-repeat fixed;
+  /* height: auto; */
+}
+
 #supervision {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/low1.jpg') center/cover no-repeat fixed;
   height: auto;
@@ -1182,7 +1192,7 @@ h3 {
   margin: 100px auto;
   width: 80%;
   background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../images/clst.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../images/ctah3.jpg);
   background-size: cover;
   border-radius: 10px;
   text-align: center;
