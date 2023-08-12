@@ -1041,12 +1041,6 @@ h3 {
   width: 100%;
 }
 
-@media (max-width: 700px) {
-  .blog-left img {
-    width: 100%;
-  }
-}
-
 .blog-left h2 {
   color: #222;
   font-weight: 600;
@@ -1060,6 +1054,10 @@ h3 {
 
 .blog-right {
   flex-basis: 32%;
+}
+
+.blog-right img{
+  width: 100%;
 }
 
 .blog-right h3 {
