@@ -1664,7 +1664,7 @@ section.left .contactInfo {
 .iconGroup .icon {
   width: 45px;
   height: 45px;
-  border: 4px solid #4ca6b0;
+  border: 4px solid #b0d1df;
   border-radius: 50%;
   margin-right: 20px;
   position: relative;
@@ -1686,7 +1686,7 @@ section.left .contactInfo {
 .iconGroup .details span:nth-child(1) {
   text-transform: uppercase;
   font-weight: 900;
-  color: #4c8fb0;
+  color: #a9cedf;
 }
 
 section.left .socialMedia {
@@ -1704,7 +1704,8 @@ section.left .socialMedia {
   text-align: center;
   margin-right: 15px;
   border-radius: 5px;
-  background-color: #555555bc;
+  /* background-color: #555555bc; */
+  background-color: #b0d1df;
   transition: .4s;
 }
 
@@ -1721,7 +1722,6 @@ section.left .socialMedia {
   background-color: #2e2e2e;
   color: #b0d1df;
   border: 1px solid #b0d1df;
-  ;
 }
 
 .socialMedia a:hover i {
@@ -2539,6 +2539,10 @@ div.desc {
   padding-right: 1rem;
 }
 
+.fa-arrow-right{
+  /* visibility: hidden; */
+}
+
 .legger .box-container .box1 .share a{
   height: 2rem;
   width: 2rem;
@@ -2564,12 +2568,6 @@ div.desc {
   font-size: .7rem;
   color: var(--black-color);
   text-transform: none;
-}
-
-.legger .box-container .box1 .payment-img{
-  margin-top: .4rem;
-  display: none;
-  height: 1.9rem;
 }
 
 .legger .credit{

@@ -107,21 +107,25 @@ window.onscroll = function() {
 //   };
 // }
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyiJLFUqU4a0CiMguGb0vGxSv6G-wNeIdC2cIDcpk3acbqUTiInjRe6Sxrig7JcovSHxQ/exec'
-const form = document.forms['submit-to-google-sheet']
-const msg = document.getElementById("msg")
-  
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyHFROnoGkw-HTu9WaR6CxHWk8iqY0cq0F3IkQ4uGTthGkr4AIn_uIfwTFD6mQRZzf1GA/exec';
+const form = document.forms['newsletter'];
+const msg = document.getElementById("msg");
+
 form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-          if (response.ok) {
-            msg.innerHTML = "Message Sent Successfully!";
-            form.reset();
-            window.location.href = "thank-you.html";
-        } else {
-            console.error('Error!', response.statusText);
-        }
+  e.preventDefault();
+
+  // Send the form data to the Google Apps Script
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => {
+      if (response.ok) {
+        // If the response is successful, show a success message and reset the form
+        msg.innerHTML = "Message Sent Successfully!";
+        form.reset();
+        window.location.href = "success.html"; // Redirect to thank you page
+      } else {
+        // If there's an error, log the status text
+        console.error('Error!', response.statusText);
+      }
     })
     .catch(error => console.error('Error!', error.message));
 });
