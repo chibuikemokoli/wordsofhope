@@ -107,6 +107,11 @@ window.onscroll = function() {
 //   };
 // }
 
+function isValidEmail(email) {
+  const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  return emailPattern.test(email);
+}
+
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyHFROnoGkw-HTu9WaR6CxHWk8iqY0cq0F3IkQ4uGTthGkr4AIn_uIfwTFD6mQRZzf1GA/exec';
 const form = document.forms['newsletter'];
 const msg = document.getElementById("msg");
@@ -114,16 +119,20 @@ const msg = document.getElementById("msg");
 form.addEventListener('submit', e => {
   e.preventDefault();
 
-  // Send the form data to the Google Apps Script
+  const userInput = form.email.value;
+
+  if (!isValidEmail(userInput)) {
+    msg.innerHTML = "Invalid email address.";
+    return;
+  }
+
   fetch(scriptURL, { method: 'POST', body: new FormData(form) })
     .then(response => {
       if (response.ok) {
-        // If the response is successful, show a success message and reset the form
         msg.innerHTML = "Message Sent Successfully!";
         form.reset();
-        window.location.href = "success.html"; // Redirect to thank you page
+        window.location.href = "success.html";
       } else {
-        // If there's an error, log the status text
         console.error('Error!', response.statusText);
       }
     })

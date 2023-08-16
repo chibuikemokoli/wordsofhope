@@ -315,6 +315,27 @@
          </div>
       </section>
 
+      <script>
+         const scriptURL = 'https://script.google.com/macros/s/AKfycbyiJLFUqU4a0CiMguGb0vGxSv6G-wNeIdC2cIDcpk3acbqUTiInjRe6Sxrig7JcovSHxQ/exec'
+         const form = document.forms['submit-to-google-sheet']
+         const msg = document.getElementById("msg")
+
+         form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+               .then(response => {
+                  if (response.ok) {
+                     msg.innerHTML = "Message Sent Successfully!";
+                     form.reset();
+                     window.location.href = "thank-you.html";
+                  } else {
+                     console.error('Error!', response.statusText);
+                  }
+               })
+               .catch(error => console.error('Error!', error.message));
+         });
+      </script>
+
       <script src="assets/js/main.js"></script>
 
       <script src="assets/js/mixitup.min.js"></script>
