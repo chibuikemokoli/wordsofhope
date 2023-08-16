@@ -199,11 +199,12 @@
                <div class="comment-box">
                   <h3>Leave a comment</h3>
 
-                  <form class="comment-form">
-                     <input type="text" placeholder="Enter Name">
-                     <input type="email" placeholder="Enter Email">
-                     <textarea rows="5" placeholder="Your Comment"></textarea>
+                  <form class="comment-form" name="blogs" action="" method="post">
+                     <input name="Name" type="text" placeholder="Enter Name">
+                     <input name="Email" type="email" placeholder="Enter Email">
+                     <textarea name="Comment" rows="5" placeholder="Your Comment"></textarea>
                      <button type="submit" class="doings-2">POST COMMENT</button>
+                     <span id="msg"></span>
                   </form>
                </div>
             </div>
@@ -310,6 +311,26 @@
          </div>
       </section>
 
+      <script>
+         const scriptURL = 'https://script.google.com/macros/s/AKfycbxtfSvQPQunSy0QP33SWNqQytt1MkeDaqaCsVKHcI0Vnh53ONdv1d-Q6CxG7b-Upalg/exec';
+         const form = document.forms['blogs'];
+         const msg = document.getElementById("msg");
+
+         form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+               .then(response => {
+                  if (response.ok) {
+                     msg.innerHTML = "Message Sent Successfully!";
+                     form.reset();
+                  } else {
+                     console.error('Error!', response.statusText);
+                  }
+               })
+               .catch(error => console.error('Error!', error.message));
+         });
+      </script>
+
       <script src="assets/js/main.js"></script>
 
       <script src="assets/js/mixitup.min.js"></script>
@@ -317,6 +338,27 @@
       <script src="assets/js/swiper-bundle.min.js"></script>
 
       <script src="assets/js/gsap.min.js"></script>
+
+      <script>
+         const scriptURL = 'https://script.google.com/macros/s/AKfycbxtfSvQPQunSy0QP33SWNqQytt1MkeDaqaCsVKHcI0Vnh53ONdv1d-Q6CxG7b-Upalg/exec';
+         const form = document.forms['blogs'];
+         const msg = document.getElementById("msg");
+
+         form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+               .then(response => {
+                  if (response.ok) {
+                     msg.innerHTML = "Message Sent Successfully!";
+                     form.reset();
+                  } else {
+                     console.error('Error!', response.statusText);
+                  }
+               })
+               .catch(error => console.error('Error!', error.message));
+         });
+      </script>
+
    </body>
 
 </html>
