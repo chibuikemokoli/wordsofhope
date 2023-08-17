@@ -112,7 +112,7 @@ function isValidEmail(email) {
   return emailPattern.test(email);
 }
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxf_UxWM0qaZb_BPxXylxKrz6Q4LMwfwNAtg0UO9DuWH9zvt2QpACWc5nT0F0MdnsWdzw/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbymGsr-KQqz0qP5XnEV9CHarqpFlahqP5EiWjQHW_QC6PJVsrS4FziASSwysMujc8rD1A/exec';
 const form = document.forms['newsletter'];
 const msg = document.getElementById("msg");
 
