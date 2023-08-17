@@ -1586,6 +1586,10 @@ h3 {
   }
 }
 
+.fa-heart{
+  color: #ff0000;
+}
+
 .container3 {
   width: 100%;
   display: flex;
