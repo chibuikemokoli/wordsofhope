@@ -130,7 +130,10 @@ form.addEventListener('submit', e => {
     .then(response => {
       if (response.ok) {
         msg.innerHTML = "Message Sent Successfully!";
-        form.reset();
+        setTimeout(function () {
+          msg.innerHTML = ""
+        }, 5000)
+        form.reset()
         window.location.href = "success.html";
       } else {
         console.error('Error!', response.statusText);

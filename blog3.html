@@ -4,7 +4,6 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
       <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
       <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
       <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,13 +20,12 @@
       <link rel="stylesheet" href="assets/css/styles.css">
       <link href="assets/images/logo0.jpg" rel="shortcut icon" />
 
-      <title>Second Blog | Words Of Hope</title>
+      <title>Third Blog | Words Of Hope</title>
 
       <script src="assets/js/gsap.min.js"></script>
    </head>
 
    <body>
-
       <a href="#" class="scrolltop" id="scroll-top">
          <i class='bx bx-chevron-up scrolltop__icon'></i>
       </a>
@@ -36,7 +34,6 @@
          <nav class="nav bd-container">
             <div class="nav__data">
                <a href="index.html" class="nav__logo">
-
                   <img src="assets/images/logo123.png" class="menu-icon">
                </a>
 
@@ -48,7 +45,6 @@
 
             <div class="nav__menu" id="nav-menu">
                <ul class="nav__list">
-
                   <li class="dropdown__item">
                      <div class="nav__link dropdown__button"><a href="about.html">
                            Meet Us </a><i class="ri-arrow-down-s-line dropdown__arrow"></i>
@@ -160,10 +156,10 @@
          </center>
       </section>
 
-      <section class="blog-content 09">
+      <section class="blog-content delp">
          <div class="row">
             <div class="blog-left">
-               <img src="assets/images/ggsi.webp" alt="">
+               <img src="assets/images/ggsi.webp"  alt="">
       
                <h2>Our Programs for 2023-2024</h2>
                <p>The Words of Hope Trauma Relief Foundation is a nonprofit organization based in Lagos, Nigeria.
@@ -200,15 +196,15 @@
                   children of adverse experiences.
                </p>
 
-
                <div class="comment-box">
                   <h3>Leave a comment</h3>
 
-                  <form class="comment-form">
-                     <input type="text" placeholder="Enter Name">
-                     <input type="email" placeholder="Enter Email">
-                     <textarea rows="5" placeholder="Your Comment"></textarea>
+                  <form class="comment-form" name="blogs" action="" method="post">
+                     <input name="Name" type="text" placeholder="Enter Name" required="required">
+                     <input name="Email" type="email" placeholder="Enter Email" required="required">
+                     <textarea name="Comment" rows="5" placeholder="Your Comment" required="required"></textarea>
                      <button type="submit" class="doings-2">POST COMMENT</button>
+                     <span id="msg"></span>
                   </form>
                </div>
             </div>
@@ -245,7 +241,6 @@
                   <span>Marital Therapy</span>
                   <span>12</span>
                </div>
-
             </div>
          </div>
       </section>
@@ -315,7 +310,7 @@
          </div>
       </section>
 
-      <script src="assets/js/main.js"></script>
+      <script src="assets/js/blog.js"></script>
 
       <script src="assets/js/mixitup.min.js"></script>
 
