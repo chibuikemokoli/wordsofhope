@@ -107,7 +107,7 @@ window.onscroll = function() {
 //   };
 // }
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxtfSvQPQunSy0QP33SWNqQytt1MkeDaqaCsVKHcI0Vnh53ONdv1d-Q6CxG7b-Upalg/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzdKPXspdc7fFO6SlbjhHaM3Z_p2Luewvk4DXceoaWemruV9fVU8ebC2VbLRHG354by/exec';
 const form = document.forms['blogs'];
 const msg = document.getElementById("msg");
 
