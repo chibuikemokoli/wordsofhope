@@ -2760,7 +2760,7 @@ header , body{
 
 @media (max-width: 1060px){
   .hide{
-    display: none;
+    /* display: none; */
   }
 }
 
