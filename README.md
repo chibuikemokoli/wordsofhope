@@ -1,2 +1,2 @@
-# Words Of Hope Trauma RElief Foundation
+# Words Of Hope Trauma Relief Foundation
 ## Description: Therapy and Wellness Website
