@@ -24,8 +24,16 @@
 
       <script src="assets/js/gsap.min.js"></script>
    </head>
+   
+   <section>
+      <div id="preloader">
+         <div id="layer1" class="layer1_class" style="background-color: rgba(0,0,0,0);">
+            <img src="assets/images/logo123.png" />
+         </div>
+      </div>
+   </section>
 
-   <body>
+   <body onload="delayer()" class="layer2_class" id="layer2">
       <a href="#" class="scrolltop" id="scroll-top">
          <i class='bx bx-chevron-up scrolltop__icon'></i>
       </a>
@@ -195,18 +203,6 @@
                   development into practical interventions for the way we nurture, protect, enrich, educate and heal
                   children of adverse experiences.
                </p>
-
-               <div class="comment-box">
-                  <h3>Leave a comment</h3>
-
-                  <form class="comment-form" name="blogs" action="" method="post">
-                     <input name="Name" type="text" placeholder="Enter Name" required="required">
-                     <input name="Email" type="email" placeholder="Enter Email" required="required">
-                     <textarea name="Comment" rows="5" placeholder="Your Comment" required="required"></textarea>
-                     <button type="submit" class="doings-2">POST COMMENT</button>
-                     <span id="msg"></span>
-                  </form>
-               </div>
             </div>
 
             <div class="blog-right">
@@ -310,7 +306,7 @@
          </div>
       </section>
 
-      <script src="assets/js/blog.js"></script>
+      <script src="assets/js/main.js"></script>
 
       <script src="assets/js/mixitup.min.js"></script>
 

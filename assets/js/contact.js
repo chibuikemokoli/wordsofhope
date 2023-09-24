@@ -17,14 +17,14 @@ function scrollTop() {
 }
 window.addEventListener('scroll', scrollTop)
 
-gsap.from('.header__image', { opacity: 0, duration: 2, delay: .5, y: -25 })
-gsap.from('.header__content', { opacity: 0, duration: 2, delay: .5, y: 25 })
+gsap.from('.header__image', { opacity: 0, duration: 2, delay: 1.2, y: -25 })
+gsap.from('.header__content', { opacity: 0, duration: 2, delay: 1.2, y: 25 })
 gsap.from('.video__image, .hgf, .ab2', { opacity: 0, duration: 2, delay: 1.4, y: 25, ease: 'expo.out' })
 gsap.from('.sub__header', { opacity: 0, duration: 2, delay: 1.4, y: 25, ease: 'expo.out' })
 
-gsap.from('.nav__logo, .nav__toggle', { opacity: 0, duration: 1.5, delay: 1, y: 25, ease: 'expo.out' })
-gsap.from('.abts', { opacity: 0, duration: 1.5, delay: .8, y: 25, ease: 'expo.out' })
-gsap.from('.nav__list, .ab1', { opacity: 0, duration: 1.2, delay: 1.3, y: 25, ease: 'expo.out' })
+gsap.from('.nav__logo, .nav__toggle', { opacity: 0, duration: 1.5, delay: 2, y: 25, ease: 'expo.out' })
+gsap.from('.abts', { opacity: 0, duration: 1.5, delay: 1.8, y: 25, ease: 'expo.out' })
+gsap.from('.nav__list, .ab1', { opacity: 0, duration: 1.2, delay: 1.7, y: 25, ease: 'expo.out' })
 gsap.from('.delp', { opacity: 0, duration: 1.2, delay: 1.3, y: 25, ease: 'expo.out' })
 gsap.from('.delc', { opacity: 0, duration: 1, delay: 1, y: 25, ease: 'expo.out' })
 gsap.from('.home__img-2', 1.2, {opacity: 0, y: 200, delay: .1})
@@ -128,3 +128,18 @@ form.addEventListener('submit', e => {
     })
     .catch(error => console.error('Error!', error.message));
 });
+
+function delayer() {
+  setTimeout(downLoad, 1000)
+}
+function downLoad() {
+  if (document.all) {
+      document.all["preloader"].style.display = "none";
+      document.all["layer2"].style.display = "block";
+  } else if (document.getElementById) {
+      node = document.getElementById("preloader").style.display = 'none';
+
+      node = document.getElementById("layer2").style.visibility = 'visible';
+
+  }
+}

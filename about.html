@@ -23,8 +23,16 @@
 
       <script src="assets/js/gsap.min.js"></script>
    </head>
+   
+   <section>
+      <div id="preloader">
+         <div id="layer1" class="layer1_class" style="background-color: rgba(0,0,0,0);">
+            <img src="assets/images/logo123.png" />
+         </div>
+      </div>
+   </section>
 
-   <body>
+   <body onload="delayer()" class="layer2_class" id="layer2">
       <a href="#" class="scrolltop" id="scroll-top">
          <i class='bx bx-chevron-up scrolltop__icon'></i>
       </a>
