@@ -1114,6 +1114,10 @@ h3 {
   .blog-content h1 {
     font-size: 24px;
   }
+
+  .blog-left{
+    margin-bottom: 30px;
+  }
 }
 
 #thanks{
