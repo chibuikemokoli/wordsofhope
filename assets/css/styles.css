@@ -577,8 +577,8 @@ h3 {
   justify-content: center;
   align-items: center;
   padding: .5rem;
-  background: rgba(123, 111, 113, .7);
   border-radius: .5rem;
+  background: rgba(47, 78, 121, 0.7);
   z-index: var(--z-tooltip);
   transition: .4s;
   visibility: hidden;
@@ -590,7 +590,8 @@ h3 {
 
 .scrolltop__icon {
   font-size: 2rem;
-  color: var(--black-color-lighten);
+  /* color: var(--black-color-lighten); */
+  color: rgb(255, 255, 255);
 }
 
 .show-scroll {
@@ -3111,7 +3112,7 @@ header , body{
   ::-webkit-scrollbar{
     width: .6rem;
     border-radius: .5rem;
-    background-color: hsl(220, 24%, 15%);
+    background-color: hsla(0, 0%, 100%, 0);
   }
 
   ::-webkit-scrollbar-thumb{
