@@ -130,7 +130,7 @@ form.addEventListener('submit', e => {
 });
 
 function delayer() {
-  setTimeout(downLoad, 1000)
+  setTimeout(downLoad, 800)
 }
 function downLoad() {
   if (document.all) {
