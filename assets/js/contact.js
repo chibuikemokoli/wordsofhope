@@ -35,77 +35,16 @@ gsap.from('.home__bird-2', 1.2, {opacity: 0, x: 80, delay: 1.2})
 gsap.from('.home__img-1', 1.2, {opacity: 0, y: 200, delay: 1.2})
 gsap.from('.home__img-4', 1.2, {opacity: 0, x: 200, delay: 1.3})
 
-function setCookie(cname, cvalue, exdays) {
-  const d = new Date();
-  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-  let expires = "expires=" + d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
-function getCookie(cname) {
-  let name = cname + "=";
-  let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(';');
-  for (let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
-
-function checkCookie() {
-  let user = getCookie("username");
-  if (user != "") {
-    alert("Welcome again " + user);
-  } else {
-    user = prompt("Please enter your name:", "");
-    if (user != "" && user != null) {
-      setCookie("username", user, 30);
-    }
-  }
-}
-
 var className = "inverted";
 var scrollTrigger = 60;
 
 window.onscroll = function() {
-  // We add pageYOffset for compatibility with IE.
   if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
     document.getElementsByTagName("header")[0].classList.add(className);
   } else {
     document.getElementsByTagName("header")[0].classList.remove(className);
   }
 };
-
-// disabling inspect element
-// document.addEventListener("contextmenu", function(e){
-//   e.preventDefault(); //this prevents right click
-// });
-// document.onkeydown=function(e){
-//   if(event.keyCode==123){
-//     return false;
-//   }
-//   if(e.ctrlKey && e.shiftKey && e.keyCode=="I".charCodeAt(0)){
-//     return false;
-//   }
-//   if(e.ctrlKey && e.shiftKey && e.keyCode=="C".charCodeAt(0)){
-//     return false;
-//   }
-//   if(e.ctrlKey && e.shiftKey && e.keyCode=="J".charCodeAt(0)){
-//     return false;
-//   }
-//   if(e.ctrlKey && e.keyCode=="U".charCodeAt(0)){
-//     return false;
-//   }
-//   if(e.ctrlKey && e.keyCode=="S".charCodeAt(0)){
-//     return false;
-//   };
-// }
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyiJLFUqU4a0CiMguGb0vGxSv6G-wNeIdC2cIDcpk3acbqUTiInjRe6Sxrig7JcovSHxQ/exec'
 const form = document.forms['submit-to-google-sheet']
@@ -140,6 +79,5 @@ function downLoad() {
       node = document.getElementById("preloader").style.display = 'none';
 
       node = document.getElementById("layer2").style.visibility = 'visible';
-
   }
 }

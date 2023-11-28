@@ -42,34 +42,6 @@ function setCookie(cname, cvalue, exdays) {
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
-function getCookie(cname) {
-  let name = cname + "=";
-  let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(';');
-  for (let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
-
-function checkCookie() {
-  let user = getCookie("username");
-  if (user != "") {
-    alert("Welcome again " + user);
-  } else {
-    user = prompt("Please enter your name:", "");
-    if (user != "" && user != null) {
-      setCookie("username", user, 30);
-    }
-  }
-}
-
 var className = "inverted";
 var scrollTrigger = 60;
 
@@ -81,31 +53,6 @@ window.onscroll = function() {
     document.getElementsByTagName("header")[0].classList.remove(className);
   }
 };
-
-// disabling inspect element
-// document.addEventListener("contextmenu", function(e){
-//   e.preventDefault(); //this prevents right click
-// });
-// document.onkeydown=function(e){
-//   if(event.keyCode==123){
-//     return false;
-//   }
-//   if(e.ctrlKey && e.shiftKey && e.keyCode=="I".charCodeAt(0)){
-//     return false;
-//   }
-//   if(e.ctrlKey && e.shiftKey && e.keyCode=="C".charCodeAt(0)){
-//     return false;
-//   }
-//   if(e.ctrlKey && e.shiftKey && e.keyCode=="J".charCodeAt(0)){
-//     return false;
-//   }
-//   if(e.ctrlKey && e.keyCode=="U".charCodeAt(0)){
-//     return false;
-//   }
-//   if(e.ctrlKey && e.keyCode=="S".charCodeAt(0)){
-//     return false;
-//   };
-// }
 
 function isValidEmail(email) {
   const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
