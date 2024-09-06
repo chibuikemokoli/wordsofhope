@@ -2051,10 +2051,10 @@ div.desc {
 }
 
 .card .thumb {
-  position: relative;
-  height: 350px;
-  width: 100%;
-  padding: 7px;
+  /* position: relative; */
+  /* height: 550px; */
+  /* width: 80%; */
+  /* padding: 7px; */
   border-radius: 8px;
 }
 
