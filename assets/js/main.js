@@ -81,7 +81,7 @@ form.addEventListener('submit', e => {
           msg.innerHTML = ""
         }, 5000)
         form.reset()
-        window.location.href = "success.html";
+        window.location.href = "success";
       } else {
         console.error('Error!', response.statusText);
       }

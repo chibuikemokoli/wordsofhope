@@ -60,7 +60,7 @@ form.addEventListener('submit', e => {
           msg.innerHTML = ""
         }, 5000)
         form.reset()
-        window.location.href = "thank-you.html";
+        window.location.href = "thank-you";
       } else {
         console.error('Error!', response.statusText);
       }
