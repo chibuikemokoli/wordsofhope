@@ -46,8 +46,8 @@ window.onscroll = function() {
   }
 };
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyiJLFUqU4a0CiMguGb0vGxSv6G-wNeIdC2cIDcpk3acbqUTiInjRe6Sxrig7JcovSHxQ/exec'
-const form = document.forms['submit-to-google-sheet']
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwDiUdSvYhw0Vu63vn5l2mV1YtyWweMwQBLrEwkJ16GWRhr2WeAiNeO2X7yzG8FYKA/exec'
+const form = document.forms['contact']
 const msg = document.getElementById("msg")
 
 form.addEventListener('submit', e => {

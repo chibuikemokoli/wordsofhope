@@ -2,14 +2,9 @@
 
 Creator: Ani Joseph, Okoli Chibuikem
 URL: https://wordsofhope.vercel.app
-Description: 
-
-/* THANKS */
-
-Craft CMS - https://craftcms.com
-Pixel & Tonic - https://pixelandtonic.com
+Description: Website for Words of Hope Trauma Relief Foundation
 
 /* SITE */
 
 Standards: HTML5, CSS3
-Components: JavaScript, SEOmatic
+Components: JavaScript

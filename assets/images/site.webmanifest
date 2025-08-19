@@ -1,7 +1,7 @@
 {
     "name": "Words of Hope Trauma Relief",
     "short_name": "WOHTRF",
-    "start_url": "https://wordsofhope.vercel.app",
+    "start_url": "/",
     "icons": [
         {
             "src": "./android-chrome-192x192.png",
