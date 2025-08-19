@@ -2190,9 +2190,9 @@ section.left .contactInfo {
 }
 
 .iconGroup .icon {
-  width: 45px;
+  /* width: 45px; */
   height: 45px;
-  border: 4px solid #bcd3e8;
+  /* border: 4px solid #bcd3e8; */
   border-radius: 50%;
   margin-right: 20px;
   position: relative;
