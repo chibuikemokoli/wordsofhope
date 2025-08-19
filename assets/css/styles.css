@@ -877,9 +877,10 @@ h3 {
     transition: all 0.3s ease;
 }
 
-.service-icon {
+.service-icon i {
     width: 3rem;
     height: 3rem;
+    font-size: 2rem;
     border: 2px solid;
     background-color: var(--color-orange-100);
     color: var(--color-orange-500);
@@ -888,6 +889,10 @@ h3 {
     align-items: center;
     justify-content: center;
     margin-bottom: 3rem;
+}
+
+.service-icon i {
+  /* width: 4rem; */
 }
 
 .services__data-2{
