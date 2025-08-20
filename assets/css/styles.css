@@ -2973,6 +2973,12 @@ div.desc {
   /* background: #fff; */
 }
 
+.box11 {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .box1 .immagee {
   width: 13rem;
